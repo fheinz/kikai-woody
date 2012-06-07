@@ -907,7 +907,7 @@ LAYER
 100
 AcDbSymbolTable
  70
-4
+6
   0
 LAYER
   5
@@ -985,9 +985,53 @@ AcDbLayerTableRecord
   2
 Dimensions
  70
-0
+1
  62
 1
+  6
+CONTINUOUS
+290
+1
+370
+0
+390
+F
+  0
+LAYER
+  5
+46
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+Crossbeam
+ 70
+0
+ 62
+7
+  6
+CONTINUOUS
+290
+1
+370
+0
+390
+F
+  0
+LAYER
+  5
+47
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+Front/Back panel
+ 70
+0
+ 62
+7
   6
 CONTINUOUS
 290
@@ -1203,37 +1247,13 @@ AcDbBlockTableRecord
   0
 BLOCK_RECORD
   5
-46
-100
-AcDbSymbolTableRecord
-100
-AcDbBlockTableRecord
-  2
-T-slot-female-3mm
-340
-0
-  0
-BLOCK_RECORD
-  5
-47
-100
-AcDbSymbolTableRecord
-100
-AcDbBlockTableRecord
-  2
-Bar-mount
-340
-0
-  0
-BLOCK_RECORD
-  5
 48
 100
 AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-T-slot-male-3mm
+T-slot-female-M3
 340
 0
   0
@@ -1245,7 +1265,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-Motor-bolt-slit
+Bar-mount
 340
 0
   0
@@ -1257,7 +1277,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-Bar-mount-perfs
+T-slot-male-M3
 340
 0
   0
@@ -1269,7 +1289,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-Bar-mount-cap
+Motor-bolt-slit
 340
 0
   0
@@ -1281,13 +1301,37 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-Motor-mount-sliding
+Bar-mount-perfs
 340
 0
   0
 BLOCK_RECORD
   5
 4D
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+Bar-mount-cap
+340
+0
+  0
+BLOCK_RECORD
+  5
+4E
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+Motor-mount-sliding
+340
+0
+  0
+BLOCK_RECORD
+  5
+4F
 100
 AcDbSymbolTableRecord
 100
@@ -1413,7 +1457,7 @@ AcDbBlockEnd
   0
 BLOCK
   5
-4E
+50
 100
 AcDbEntity
   8
@@ -1421,7 +1465,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-T-slot-female-3mm
+T-slot-female-M3
  70
 0
  10
@@ -1431,13 +1475,13 @@ T-slot-female-3mm
  30
 0.0
   3
-T-slot-female-3mm
+T-slot-female-M3
   1
 
   0
 CIRCLE
   5
-4F
+51
 100
 AcDbEntity
 100
@@ -1461,63 +1505,63 @@ ByLayer
   0
 LINE
   5
-50
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-20.4000000000000057
- 20
-3.0000000000000009
- 30
-0.0
- 11
-10.2000000000000064
- 21
-3.0000000000000009
- 31
-0.0
-  0
-LINE
-  5
-51
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-10.2000000000000064
- 20
--2.9999999999999996
- 30
-0.0
- 11
-20.4000000000000057
- 21
--2.9999999999999996
- 31
-0.0
-  0
-LINE
-  5
 52
+100
+AcDbEntity
+100
+AcDbLine
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+20.4000000000000057
+ 20
+3.0000000000000009
+ 30
+0.0
+ 11
+10.2000000000000064
+ 21
+3.0000000000000009
+ 31
+0.0
+  0
+LINE
+  5
+53
+100
+AcDbEntity
+100
+AcDbLine
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+10.2000000000000064
+ 20
+-2.9999999999999996
+ 30
+0.0
+ 11
+20.4000000000000057
+ 21
+-2.9999999999999996
+ 31
+0.0
+  0
+LINE
+  5
+54
 100
 AcDbEntity
 100
@@ -1545,7 +1589,7 @@ ByLayer
   0
 LINE
   5
-53
+55
 100
 AcDbEntity
 100
@@ -1573,7 +1617,7 @@ ByLayer
   0
 LINE
   5
-54
+56
 100
 AcDbEntity
 100
@@ -1601,7 +1645,7 @@ ByLayer
   0
 LINE
   5
-55
+57
 100
 AcDbEntity
 100
@@ -1629,7 +1673,7 @@ ByLayer
   0
 LINE
   5
-56
+58
 100
 AcDbEntity
 100
@@ -1657,7 +1701,7 @@ ByLayer
   0
 LINE
   5
-57
+59
 100
 AcDbEntity
 100
@@ -1685,7 +1729,7 @@ ByLayer
   0
 ENDBLK
   5
-58
+5A
 100
 AcDbEntity
   8
@@ -1695,7 +1739,7 @@ AcDbBlockEnd
   0
 BLOCK
   5
-59
+5B
 100
 AcDbEntity
   8
@@ -1719,7 +1763,7 @@ Bar-mount
   0
 CIRCLE
   5
-5A
+5C
 100
 AcDbEntity
 100
@@ -1743,54 +1787,6 @@ ByLayer
   0
 CIRCLE
   5
-5B
-100
-AcDbEntity
-100
-AcDbCircle
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-6.9282032302755097
- 20
-3.9999999999999996
- 30
-0.0
- 40
-1.5
-  0
-CIRCLE
-  5
-5C
-100
-AcDbEntity
-100
-AcDbCircle
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
--6.9282032302755079
- 20
-4.0000000000000027
- 30
-0.0
- 40
-1.5
-  0
-CIRCLE
-  5
 5D
 100
 AcDbEntity
@@ -1805,55 +1801,21 @@ AcDbCircle
   6
 ByLayer
  10
--0.0000000000000015
+8.0
  20
--8.0
+0.0
  30
 0.0
  40
 1.5
   0
-ENDBLK
+CIRCLE
   5
 5E
 100
 AcDbEntity
-  8
-0
 100
-AcDbBlockEnd
-  0
-BLOCK
-  5
-5F
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockBegin
-  2
-T-slot-male-3mm
- 70
-0
- 10
-0.0
- 20
-0.0
- 30
-0.0
-  3
-T-slot-male-3mm
-  1
-
-  0
-LINE
-  5
-60
-100
-AcDbEntity
-100
-AcDbLine
+AcDbCircle
   8
 0
  62
@@ -1863,17 +1825,47 @@ AcDbLine
   6
 ByLayer
  10
-0.0
+-8.0
  20
-11.0
+0.0
  30
 0.0
- 11
+ 40
 1.5
- 21
-11.0
- 31
+  0
+ENDBLK
+  5
+5F
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+60
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+T-slot-male-M3
+ 70
+0
+ 10
 0.0
+ 20
+0.0
+ 30
+0.0
+  3
+T-slot-male-M3
+  1
+
   0
 LINE
   5
@@ -1891,7 +1883,7 @@ AcDbLine
   6
 ByLayer
  10
-1.5
+0.0
  20
 11.0
  30
@@ -1899,7 +1891,7 @@ ByLayer
  11
 1.5
  21
-9.5999999999999996
+11.0
  31
 0.0
   0
@@ -1921,11 +1913,11 @@ ByLayer
  10
 1.5
  20
-9.5999999999999996
+11.0
  30
 0.0
  11
-2.75
+1.5
  21
 9.5999999999999996
  31
@@ -1947,7 +1939,7 @@ AcDbLine
   6
 ByLayer
  10
-2.75
+1.5
  20
 9.5999999999999996
  30
@@ -1955,7 +1947,7 @@ ByLayer
  11
 2.75
  21
-7.7999999999999998
+9.5999999999999996
  31
 0.0
   0
@@ -1977,6 +1969,34 @@ ByLayer
  10
 2.75
  20
+9.5999999999999996
+ 30
+0.0
+ 11
+2.75
+ 21
+7.7999999999999998
+ 31
+0.0
+  0
+LINE
+  5
+65
+100
+AcDbEntity
+100
+AcDbLine
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+2.75
+ 20
 7.7999999999999998
  30
 0.0
@@ -1989,7 +2009,7 @@ ByLayer
   0
 LINE
   5
-65
+66
 100
 AcDbEntity
 100
@@ -2017,7 +2037,7 @@ ByLayer
   0
 LINE
   5
-66
+67
 100
 AcDbEntity
 100
@@ -2045,7 +2065,7 @@ ByLayer
   0
 LINE
   5
-67
+68
 100
 AcDbEntity
 100
@@ -2073,7 +2093,7 @@ ByLayer
   0
 LINE
   5
-68
+69
 100
 AcDbEntity
 100
@@ -2101,7 +2121,7 @@ ByLayer
   0
 LINE
   5
-69
+6A
 100
 AcDbEntity
 100
@@ -2129,34 +2149,6 @@ ByLayer
   0
 LINE
   5
-6A
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-0.0
- 20
-11.0
- 30
-0.0
- 11
--1.5
- 21
-11.0
- 31
-0.0
-  0
-LINE
-  5
 6B
 100
 AcDbEntity
@@ -2171,7 +2163,7 @@ AcDbLine
   6
 ByLayer
  10
--1.5
+0.0
  20
 11.0
  30
@@ -2179,7 +2171,7 @@ ByLayer
  11
 -1.5
  21
-9.5999999999999996
+11.0
  31
 0.0
   0
@@ -2201,11 +2193,11 @@ ByLayer
  10
 -1.5
  20
-9.5999999999999996
+11.0
  30
 0.0
  11
--2.75
+-1.5
  21
 9.5999999999999996
  31
@@ -2227,7 +2219,7 @@ AcDbLine
   6
 ByLayer
  10
--2.75
+-1.5
  20
 9.5999999999999996
  30
@@ -2235,7 +2227,7 @@ ByLayer
  11
 -2.75
  21
-7.8000000000000007
+9.5999999999999996
  31
 0.0
   0
@@ -2257,6 +2249,34 @@ ByLayer
  10
 -2.75
  20
+9.5999999999999996
+ 30
+0.0
+ 11
+-2.75
+ 21
+7.8000000000000007
+ 31
+0.0
+  0
+LINE
+  5
+6F
+100
+AcDbEntity
+100
+AcDbLine
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+-2.75
+ 20
 7.8000000000000007
  30
 0.0
@@ -2269,7 +2289,7 @@ ByLayer
   0
 LINE
   5
-6F
+70
 100
 AcDbEntity
 100
@@ -2297,7 +2317,7 @@ ByLayer
   0
 LINE
   5
-70
+71
 100
 AcDbEntity
 100
@@ -2325,7 +2345,7 @@ ByLayer
   0
 LINE
   5
-71
+72
 100
 AcDbEntity
 100
@@ -2353,7 +2373,7 @@ ByLayer
   0
 LINE
   5
-72
+73
 100
 AcDbEntity
 100
@@ -2381,7 +2401,7 @@ ByLayer
   0
 LINE
   5
-73
+74
 100
 AcDbEntity
 100
@@ -2409,7 +2429,7 @@ ByLayer
   0
 ENDBLK
   5
-74
+75
 100
 AcDbEntity
   8
@@ -2419,7 +2439,7 @@ AcDbBlockEnd
   0
 BLOCK
   5
-75
+76
 100
 AcDbEntity
   8
@@ -2443,7 +2463,7 @@ Motor-bolt-slit
   0
 LINE
   5
-76
+77
 100
 AcDbEntity
 100
@@ -2471,7 +2491,7 @@ ByLayer
   0
 LINE
   5
-77
+78
 100
 AcDbEntity
 100
@@ -2499,7 +2519,7 @@ ByLayer
   0
 ARC
   5
-78
+79
 100
 AcDbEntity
   8
@@ -2529,7 +2549,7 @@ AcDbArc
   0
 ARC
   5
-79
+7A
 100
 AcDbEntity
   8
@@ -2559,7 +2579,7 @@ AcDbArc
   0
 ENDBLK
   5
-7A
+7B
 100
 AcDbEntity
   8
@@ -2569,7 +2589,7 @@ AcDbBlockEnd
   0
 BLOCK
   5
-7B
+7C
 100
 AcDbEntity
   8
@@ -2593,30 +2613,6 @@ Bar-mount-perfs
   0
 CIRCLE
   5
-7C
-100
-AcDbEntity
-100
-AcDbCircle
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-6.9282032302754999
- 20
-4.0
- 30
-0.0
- 40
-1.5
-  0
-CIRCLE
-  5
 7D
 100
 AcDbEntity
@@ -2631,9 +2627,9 @@ AcDbCircle
   6
 ByLayer
  10
--6.9282032302754999
+8.0
  20
-4.0
+0.0
  30
 0.0
  40
@@ -2655,9 +2651,9 @@ AcDbCircle
   6
 ByLayer
  10
-0.0
- 20
 -8.0
+ 20
+0.0
  30
 0.0
  40
@@ -2697,13 +2693,13 @@ Bar-mount-cap
   1
 
   0
-LINE
+CIRCLE
   5
 81
 100
 AcDbEntity
 100
-AcDbLine
+AcDbCircle
   8
 0
  62
@@ -2713,25 +2709,21 @@ AcDbLine
   6
 ByLayer
  10
--9.9592921435210258
+-8.0
  20
-2.25
+0.0
  30
 0.0
- 11
--3.0310889132455259
- 21
--9.75
- 31
-0.0
+ 40
+1.5
   0
-LINE
+CIRCLE
   5
 82
 100
 AcDbEntity
 100
-AcDbLine
+AcDbCircle
   8
 0
  62
@@ -2741,17 +2733,13 @@ AcDbLine
   6
 ByLayer
  10
-3.0310889132455259
+8.0
  20
--9.75
+0.0
  30
 0.0
- 11
-9.9592921435210258
- 21
-2.25
- 31
-0.0
+ 40
+1.5
   0
 LINE
   5
@@ -2769,25 +2757,25 @@ AcDbLine
   6
 ByLayer
  10
-6.9282032302754999
+-8.0
  20
-7.5
+4.0999999999999996
  30
 0.0
  11
--6.9282032302754999
+8.0
  21
-7.5
+4.0999999999999996
  31
 0.0
   0
-INSERT
+LINE
   5
 84
 100
 AcDbEntity
 100
-AcDbBlockReference
+AcDbLine
   8
 0
  62
@@ -2796,13 +2784,17 @@ AcDbBlockReference
 -1
   6
 ByLayer
-  2
-Bar-mount-perfs
  10
-0.0
+7.9999999999999991
  20
-0.0
+-4.0999999999999996
  30
+0.0
+ 11
+-8.0
+ 21
+-4.0999999999999996
+ 31
 0.0
   0
 ARC
@@ -2821,19 +2813,19 @@ ByLayer
 100
 AcDbCircle
  10
-0.0
- 20
 -8.0
+ 20
+0.0
  30
 0.0
  40
-3.5
+4.0999999999999996
 100
 AcDbArc
  50
-210.0000000000000568
+90.0
  51
-329.9999999999999432
+270.0
   0
 ARC
   5
@@ -2851,53 +2843,23 @@ ByLayer
 100
 AcDbCircle
  10
--6.9282032302754999
+8.0
  20
-4.0
+0.0
  30
 0.0
  40
-3.5
+4.0999999999999996
 100
 AcDbArc
  50
-90.0
- 51
-210.0000000000000568
-  0
-ARC
-  5
-87
-100
-AcDbEntity
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-100
-AcDbCircle
- 10
-6.9282032302754999
- 20
-4.0
- 30
-0.0
- 40
-3.5
-100
-AcDbArc
- 50
-329.9999999999999432
+270.0
  51
 90.0
   0
 ENDBLK
   5
-88
+87
 100
 AcDbEntity
   8
@@ -2907,7 +2869,7 @@ AcDbBlockEnd
   0
 BLOCK
   5
-89
+88
 100
 AcDbEntity
   8
@@ -2931,7 +2893,7 @@ Motor-mount-sliding
   0
 INSERT
   5
-8A
+89
 100
 AcDbEntity
 100
@@ -2948,6 +2910,34 @@ ByLayer
 Motor-bolt-slit
  10
 -15.5
+ 20
+15.5
+ 30
+0.0
+ 44
+1.0
+ 45
+1.0
+  0
+INSERT
+  5
+8A
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+Motor-bolt-slit
+ 10
+15.5
  20
 15.5
  30
@@ -2977,34 +2967,6 @@ Motor-bolt-slit
  10
 15.5
  20
-15.5
- 30
-0.0
- 44
-1.0
- 45
-1.0
-  0
-INSERT
-  5
-8C
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-Motor-bolt-slit
- 10
-15.5
- 20
 -15.5
  30
 0.0
@@ -3015,7 +2977,7 @@ Motor-bolt-slit
   0
 INSERT
   5
-8D
+8C
 100
 AcDbEntity
 100
@@ -3043,7 +3005,7 @@ Motor-bolt-slit
   0
 LINE
   5
-8E
+8D
 100
 AcDbEntity
 100
@@ -3071,7 +3033,7 @@ ByLayer
   0
 LINE
   5
-8F
+8E
 100
 AcDbEntity
 100
@@ -3099,7 +3061,7 @@ ByLayer
   0
 ARC
   5
-90
+8F
 100
 AcDbEntity
   8
@@ -3129,7 +3091,7 @@ AcDbArc
   0
 ARC
   5
-91
+90
 100
 AcDbEntity
   8
@@ -3159,7 +3121,7 @@ AcDbArc
   0
 ENDBLK
   5
-92
+91
 100
 AcDbEntity
   8
@@ -3169,7 +3131,7 @@ AcDbBlockEnd
   0
 BLOCK
   5
-93
+92
 100
 AcDbEntity
   8
@@ -3193,7 +3155,7 @@ Motor-mount-centering
   0
 CIRCLE
   5
-94
+93
 100
 AcDbEntity
 100
@@ -3217,7 +3179,7 @@ ByLayer
   0
 INSERT
   5
-95
+94
 100
 AcDbEntity
 100
@@ -3247,7 +3209,7 @@ Motor-bolt-slit
   0
 INSERT
   5
-96
+95
 100
 AcDbEntity
 100
@@ -3277,7 +3239,7 @@ Motor-bolt-slit
   0
 INSERT
   5
-97
+96
 100
 AcDbEntity
 100
@@ -3307,7 +3269,7 @@ Motor-bolt-slit
   0
 INSERT
   5
-98
+97
 100
 AcDbEntity
 100
@@ -3337,7 +3299,7 @@ Motor-bolt-slit
   0
 ENDBLK
   5
-99
+98
 100
 AcDbEntity
   8
@@ -3353,7 +3315,7 @@ ENTITIES
   0
 LINE
   5
-9A
+99
 100
 AcDbEntity
 100
@@ -3381,7 +3343,7 @@ ByLayer
   0
 LINE
   5
-9B
+9A
 100
 AcDbEntity
 100
@@ -3409,7 +3371,7 @@ ByLayer
   0
 LINE
   5
-9C
+9B
 100
 AcDbEntity
 100
@@ -3435,357 +3397,9 @@ ByLayer
  31
 0.0
   0
-INSERT
-  5
-9D
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-Bar-mount
- 10
-240.0
- 20
-160.0
- 30
-0.0
- 44
-1.0
- 45
-1.0
-  0
-INSERT
-  5
-9E
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-Bar-mount
- 10
-380.0
- 20
-160.0
- 30
-0.0
- 44
-1.0
- 45
-1.0
-  0
-ARC
-  5
-9F
-100
-AcDbEntity
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-100
-AcDbCircle
- 10
-100.0
- 20
-165.0
- 30
-0.0
- 40
-10.0
-100
-AcDbArc
- 50
-90.0
- 51
-180.0
-  0
-ARC
-  5
-A0
-100
-AcDbEntity
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-100
-AcDbCircle
- 10
-630.0
- 20
-165.0
- 30
-0.0
- 40
-10.0
-100
-AcDbArc
- 50
-0.0
- 51
-90.0
-  0
-INSERT
-  5
-A1
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-T-slot-female-3mm
- 10
-97.0
- 20
-140.0
- 30
-0.0
- 50
-90.0
- 44
-1.0
- 45
-1.0
-  0
-INSERT
-  5
-A2
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-T-slot-female-3mm
- 10
-633.0
- 20
-140.0
- 30
-0.0
- 50
-90.0
- 44
-1.0
- 45
-1.0
-  0
 LINE
   5
-A3
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-100.0
- 20
-175.0
- 30
-0.0
- 11
-630.0
- 21
-175.0
- 31
-0.0
-  0
-ARC
-  5
-A4
-100
-AcDbEntity
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-100
-AcDbCircle
- 10
-100.0
- 20
-94.0
- 30
-0.0
- 40
-10.0
-100
-AcDbArc
- 50
-180.0
- 51
-270.0
-  0
-LINE
-  5
-A5
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-100.0
- 20
-84.0
- 30
-0.0
- 11
-630.0
- 21
-84.0
- 31
-0.0
-  0
-ARC
-  5
-A6
-100
-AcDbEntity
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-100
-AcDbCircle
- 10
-630.0
- 20
-94.0
- 30
-0.0
- 40
-10.0
-100
-AcDbArc
- 50
-270.0
- 51
-0.0
-  0
-LINE
-  5
-A7
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-90.0
- 20
-94.0
- 30
-0.0
- 11
-90.0
- 21
-165.0
- 31
-0.0
-  0
-LINE
-  5
-A8
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-640.0
- 20
-94.0
- 30
-0.0
- 11
-640.0
- 21
-165.0
- 31
-0.0
-  0
-LINE
-  5
-A9
+9C
 100
 AcDbEntity
 100
@@ -3813,7 +3427,7 @@ ByLayer
   0
 LINE
   5
-AA
+9D
 100
 AcDbEntity
 100
@@ -3841,7 +3455,7 @@ ByLayer
   0
 LINE
   5
-AB
+9E
 100
 AcDbEntity
 100
@@ -3869,7 +3483,7 @@ ByLayer
   0
 LINE
   5
-AC
+9F
 100
 AcDbEntity
 100
@@ -3897,7 +3511,7 @@ ByLayer
   0
 LINE
   5
-AD
+A0
 100
 AcDbEntity
 100
@@ -3925,7 +3539,7 @@ ByLayer
   0
 DIMENSION
   5
-AE
+A1
 100
 AcDbEntity
   8
@@ -3985,7 +3599,7 @@ AcDbRotatedDimension
   0
 DIMENSION
   5
-AF
+A2
 100
 AcDbEntity
   8
@@ -4045,7 +3659,7 @@ AcDbRotatedDimension
   0
 LINE
   5
-B0
+A3
 100
 AcDbEntity
 100
@@ -4073,7 +3687,7 @@ ByLayer
   0
 LINE
   5
-B1
+A4
 100
 AcDbEntity
 100
@@ -4101,7 +3715,7 @@ ByLayer
   0
 LINE
   5
-B2
+A5
 100
 AcDbEntity
 100
@@ -4129,7 +3743,7 @@ ByLayer
   0
 LINE
   5
-B3
+A6
 100
 AcDbEntity
 100
@@ -4157,7 +3771,7 @@ ByLayer
   0
 DIMENSION
   5
-B4
+A7
 100
 AcDbEntity
   8
@@ -4217,7 +3831,7 @@ AcDbRotatedDimension
   0
 DIMENSION
   5
-B5
+A8
 100
 AcDbEntity
   8
@@ -4277,7 +3891,7 @@ AcDbRotatedDimension
   0
 LINE
   5
-B6
+A9
 100
 AcDbEntity
 100
@@ -4305,7 +3919,7 @@ ByLayer
   0
 LINE
   5
-B7
+AA
 100
 AcDbEntity
 100
@@ -4333,7 +3947,7 @@ ByLayer
   0
 INSERT
   5
-B8
+AB
 100
 AcDbEntity
 100
@@ -4347,7 +3961,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-male-3mm
+T-slot-male-M3
  10
 670.0
  20
@@ -4363,7 +3977,7 @@ T-slot-male-3mm
   0
 LINE
   5
-B9
+AC
 100
 AcDbEntity
 100
@@ -4391,7 +4005,7 @@ ByLayer
   0
 LINE
   5
-BA
+AD
 100
 AcDbEntity
 100
@@ -4419,7 +4033,7 @@ ByLayer
   0
 INSERT
   5
-BB
+AE
 100
 AcDbEntity
 100
@@ -4433,7 +4047,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-female-3mm
+T-slot-female-M3
  10
 695.0
  20
@@ -4447,7 +4061,7 @@ T-slot-female-3mm
   0
 INSERT
   5
-BC
+AF
 100
 AcDbEntity
 100
@@ -4461,7 +4075,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-female-3mm
+T-slot-female-M3
  10
 695.0
  20
@@ -4475,7 +4089,7 @@ T-slot-female-3mm
   0
 LINE
   5
-BD
+B0
 100
 AcDbEntity
 100
@@ -4503,7 +4117,7 @@ ByLayer
   0
 LINE
   5
-BE
+B1
 100
 AcDbEntity
 100
@@ -4531,7 +4145,7 @@ ByLayer
   0
 LINE
   5
-BF
+B2
 100
 AcDbEntity
 100
@@ -4559,7 +4173,7 @@ ByLayer
   0
 LINE
   5
-C0
+B3
 100
 AcDbEntity
 100
@@ -4587,7 +4201,7 @@ ByLayer
   0
 LINE
   5
-C1
+B4
 100
 AcDbEntity
 100
@@ -4615,7 +4229,7 @@ ByLayer
   0
 LINE
   5
-C2
+B5
 100
 AcDbEntity
 100
@@ -4643,7 +4257,7 @@ ByLayer
   0
 LINE
   5
-C3
+B6
 100
 AcDbEntity
 100
@@ -4671,7 +4285,7 @@ ByLayer
   0
 ARC
   5
-C4
+B7
 100
 AcDbEntity
   8
@@ -4701,7 +4315,7 @@ AcDbArc
   0
 LINE
   5
-C5
+B8
 100
 AcDbEntity
 100
@@ -4729,7 +4343,7 @@ ByLayer
   0
 ARC
   5
-C6
+B9
 100
 AcDbEntity
   8
@@ -4759,7 +4373,7 @@ AcDbArc
   0
 LINE
   5
-C7
+BA
 100
 AcDbEntity
 100
@@ -4787,7 +4401,7 @@ ByLayer
   0
 LINE
   5
-C8
+BB
 100
 AcDbEntity
 100
@@ -4815,7 +4429,7 @@ ByLayer
   0
 LINE
   5
-C9
+BC
 100
 AcDbEntity
 100
@@ -4841,69 +4455,9 @@ ByLayer
  31
 0.0
   0
-INSERT
-  5
-CA
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-T-slot-female-3mm
- 10
-284.5
- 20
-122.5
- 30
-0.0
- 50
-90.0
- 44
-1.0
- 45
-1.0
-  0
-INSERT
-  5
-CB
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-T-slot-female-3mm
- 10
-335.5
- 20
-122.5
- 30
-0.0
- 50
-90.0
- 44
-1.0
- 45
-1.0
-  0
 LINE
   5
-CC
+BD
 100
 AcDbEntity
 100
@@ -4931,7 +4485,7 @@ ByLayer
   0
 LINE
   5
-CD
+BE
 100
 AcDbEntity
 100
@@ -4959,7 +4513,7 @@ ByLayer
   0
 INSERT
   5
-CE
+BF
 100
 AcDbEntity
 100
@@ -4973,35 +4527,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-female-3mm
- 10
-226.5
- 20
-97.0
- 30
-0.0
- 44
-1.0
- 45
-1.0
-  0
-INSERT
-  5
-CF
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-T-slot-male-3mm
+T-slot-male-M3
  10
 226.5
  20
@@ -5017,7 +4543,7 @@ T-slot-male-3mm
   0
 LINE
   5
-D0
+C0
 100
 AcDbEntity
 100
@@ -5045,7 +4571,7 @@ ByLayer
   0
 INSERT
   5
-D1
+C1
 100
 AcDbEntity
 100
@@ -5059,7 +4585,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-male-3mm
+T-slot-male-M3
  10
 226.5
  20
@@ -5073,7 +4599,7 @@ T-slot-male-3mm
   0
 INSERT
   5
-D2
+C2
 100
 AcDbEntity
 100
@@ -5087,7 +4613,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-male-3mm
+T-slot-male-M3
  10
 503.5
  20
@@ -5101,7 +4627,7 @@ T-slot-male-3mm
   0
 LINE
   5
-D3
+C3
 100
 AcDbEntity
 100
@@ -5129,7 +4655,7 @@ ByLayer
   0
 INSERT
   5
-D4
+C4
 100
 AcDbEntity
 100
@@ -5143,35 +4669,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-female-3mm
- 10
-503.5
- 20
-97.0
- 30
-0.0
- 44
-1.0
- 45
-1.0
-  0
-INSERT
-  5
-D5
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-T-slot-male-3mm
+T-slot-male-M3
  10
 503.5
  20
@@ -5187,7 +4685,7 @@ T-slot-male-3mm
   0
 INSERT
   5
-D6
+C5
 100
 AcDbEntity
 100
@@ -5201,7 +4699,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-male-3mm
+T-slot-male-M3
  10
 695.0
  20
@@ -5223,7 +4721,7 @@ T-slot-male-3mm
   0
 LINE
   5
-D7
+C6
 100
 AcDbEntity
 100
@@ -5251,7 +4749,7 @@ ByLayer
   0
 LINE
   5
-D8
+C7
 100
 AcDbEntity
 100
@@ -5277,33 +4775,9 @@ ByLayer
  31
 0.0
   0
-INSERT
-  5
-D9
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-Bar-mount-cap
- 10
-240.0
- 20
-210.0
- 30
-0.0
-  0
 LINE
   5
-DA
+C8
 100
 AcDbEntity
 100
@@ -5331,7 +4805,7 @@ ByLayer
   0
 LINE
   5
-DB
+C9
 100
 AcDbEntity
 100
@@ -5359,7 +4833,7 @@ ByLayer
   0
 LINE
   5
-DC
+CA
 100
 AcDbEntity
 100
@@ -5387,7 +4861,7 @@ ByLayer
   0
 INSERT
   5
-DD
+CB
 100
 AcDbEntity
 100
@@ -5401,7 +4875,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-female-3mm
+T-slot-female-M3
  10
 1055.0
  20
@@ -5415,7 +4889,7 @@ T-slot-female-3mm
   0
 INSERT
   5
-DE
+CC
 100
 AcDbEntity
 100
@@ -5429,7 +4903,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-female-3mm
+T-slot-female-M3
  10
 1055.0
  20
@@ -5443,7 +4917,7 @@ T-slot-female-3mm
   0
 ARC
   5
-DF
+CD
 100
 AcDbEntity
   8
@@ -5473,7 +4947,7 @@ AcDbArc
   0
 LINE
   5
-E0
+CE
 100
 AcDbEntity
 100
@@ -5501,7 +4975,7 @@ ByLayer
   0
 LINE
   5
-E1
+CF
 100
 AcDbEntity
 100
@@ -5529,7 +5003,7 @@ ByLayer
   0
 ARC
   5
-E2
+D0
 100
 AcDbEntity
   8
@@ -5559,7 +5033,7 @@ AcDbArc
   0
 LINE
   5
-E3
+D1
 100
 AcDbEntity
 100
@@ -5587,7 +5061,7 @@ ByLayer
   0
 ARC
   5
-E4
+D2
 100
 AcDbEntity
   8
@@ -5617,7 +5091,7 @@ AcDbArc
   0
 LINE
   5
-E5
+D3
 100
 AcDbEntity
 100
@@ -5645,7 +5119,7 @@ ByLayer
   0
 ARC
   5
-E6
+D4
 100
 AcDbEntity
   8
@@ -5675,7 +5149,7 @@ AcDbArc
   0
 LINE
   5
-E7
+D5
 100
 AcDbEntity
 100
@@ -5703,7 +5177,7 @@ ByLayer
   0
 LINE
   5
-E8
+D6
 100
 AcDbEntity
 100
@@ -5731,7 +5205,7 @@ ByLayer
   0
 INSERT
   5
-E9
+D7
 100
 AcDbEntity
 100
@@ -5745,7 +5219,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-male-3mm
+T-slot-male-M3
  10
 709.0
  20
@@ -5759,7 +5233,7 @@ T-slot-male-3mm
   0
 LINE
   5
-EA
+D8
 100
 AcDbEntity
 100
@@ -5787,7 +5261,7 @@ ByLayer
   0
 ARC
   5
-EB
+D9
 100
 AcDbEntity
   8
@@ -5817,7 +5291,7 @@ AcDbArc
   0
 LINE
   5
-EC
+DA
 100
 AcDbEntity
 100
@@ -5845,7 +5319,7 @@ ByLayer
   0
 LINE
   5
-ED
+DB
 100
 AcDbEntity
 100
@@ -5873,7 +5347,7 @@ ByLayer
   0
 ARC
   5
-EE
+DC
 100
 AcDbEntity
   8
@@ -5903,7 +5377,7 @@ AcDbArc
   0
 INSERT
   5
-EF
+DD
 100
 AcDbEntity
 100
@@ -5917,7 +5391,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-male-3mm
+T-slot-male-M3
  10
 709.0
  20
@@ -5933,7 +5407,7 @@ T-slot-male-3mm
   0
 LINE
   5
-F0
+DE
 100
 AcDbEntity
 100
@@ -5961,7 +5435,7 @@ ByLayer
   0
 LINE
   5
-F1
+DF
 100
 AcDbEntity
 100
@@ -5989,7 +5463,7 @@ ByLayer
   0
 LINE
   5
-F2
+E0
 100
 AcDbEntity
 100
@@ -6017,7 +5491,7 @@ ByLayer
   0
 LINE
   5
-F3
+E1
 100
 AcDbEntity
 100
@@ -6045,7 +5519,7 @@ ByLayer
   0
 ARC
   5
-F4
+E2
 100
 AcDbEntity
   8
@@ -6075,7 +5549,7 @@ AcDbArc
   0
 ARC
   5
-F5
+E3
 100
 AcDbEntity
   8
@@ -6105,7 +5579,7 @@ AcDbArc
   0
 LINE
   5
-F6
+E4
 100
 AcDbEntity
 100
@@ -6133,7 +5607,7 @@ ByLayer
   0
 INSERT
   5
-F7
+E5
 100
 AcDbEntity
 100
@@ -6161,7 +5635,7 @@ Motor-mount-sliding
   0
 LINE
   5
-F8
+E6
 100
 AcDbEntity
 100
@@ -6189,7 +5663,7 @@ ByLayer
   0
 DIMENSION
   5
-F9
+E7
 100
 AcDbEntity
   8
@@ -6249,7 +5723,7 @@ AcDbRotatedDimension
   0
 DIMENSION
   5
-FA
+E8
 100
 AcDbEntity
   8
@@ -6309,7 +5783,7 @@ AcDbRotatedDimension
   0
 DIMENSION
   5
-FB
+E9
 100
 AcDbEntity
   8
@@ -6369,149 +5843,7 @@ AcDbRotatedDimension
   0
 LINE
   5
-FC
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-629.8999999999999773
- 20
-283.7000000000000455
- 30
-0.0
- 11
-629.8999999999999773
- 21
-288.0
- 31
-0.0
-  0
-INSERT
-  5
-FD
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-T-slot-male-3mm
- 10
-629.8999999999999773
- 20
-263.0
- 30
-0.0
- 50
-90.0
- 44
-1.0
- 45
-1.0
-  0
-LINE
-  5
-FE
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-629.8999999999999773
- 20
-288.0
- 30
-0.0
- 11
-99.8999999999999773
- 21
-288.0
- 31
-0.0
-  0
-LINE
-  5
-FF
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-629.8999999999999773
- 20
-230.0
- 30
-0.0
- 11
-99.8999999999999773
- 21
-230.0000000000000568
- 31
-0.0
-  0
-LINE
-  5
-100
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-629.8999999999999773
- 20
-242.2999999999999545
- 30
-0.0
- 11
-629.8999999999999773
- 21
-230.0
- 31
-0.0
-  0
-LINE
-  5
-101
+EA
 100
 AcDbEntity
 100
@@ -6539,7 +5871,7 @@ ByLayer
   0
 LINE
   5
-102
+EB
 100
 AcDbEntity
 100
@@ -6567,7 +5899,7 @@ ByLayer
   0
 LINE
   5
-103
+EC
 100
 AcDbEntity
 100
@@ -6593,161 +5925,9 @@ ByLayer
  31
 0.0
   0
-INSERT
-  5
-104
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-Motor-mount-centering
- 10
-125.0
- 20
-321.0
- 30
-0.0
- 50
-180.0
- 44
-1.0
- 45
-1.0
-  0
-INSERT
-  5
-105
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-Bar-mount
- 10
-155.0
- 20
-321.0
- 30
-0.0
- 50
-210.0
- 44
-1.0
- 45
-1.0
-  0
 LINE
   5
-106
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-99.8999999999999773
- 20
-283.7000000000000455
- 30
-0.0
- 11
-99.8999999999999773
- 21
-288.0
- 31
-0.0
-  0
-INSERT
-  5
-107
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-T-slot-male-3mm
- 10
-99.8999999999999773
- 20
-263.0
- 30
-0.0
- 41
-1.0
- 42
--1.0
- 43
-1.0
- 50
-90.0
- 44
-1.0
- 45
-1.0
-  0
-LINE
-  5
-108
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-99.899999999999892
- 20
-242.3000000000000114
- 30
-0.0
- 11
-99.8999999999999631
- 21
-230.0000000000000568
- 31
-0.0
-  0
-LINE
-  5
-109
+ED
 100
 AcDbEntity
 100
@@ -6775,535 +5955,7 @@ ByLayer
   0
 LINE
   5
-10A
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-134.2999999999999545
- 20
-344.0
- 30
-0.0
- 11
-100.0
- 21
-344.0
- 31
-0.0
-  0
-LINE
-  5
-10B
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-100.0
- 20
-298.0
- 30
-0.0
- 11
-134.2999999999999545
- 21
-298.0
- 31
-0.0
-  0
-LINE
-  5
-10C
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-100.0
- 20
-311.1000000000000227
- 30
-0.0
- 11
-94.0
- 21
-310.5
- 31
-0.0
-  0
-LINE
-  5
-10D
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-94.0
- 20
-310.5
- 30
-0.0
- 11
-93.9999999999999858
- 21
-300.8999999999999773
- 31
-0.0
-  0
-LINE
-  5
-10E
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-93.9999999999999858
- 20
-300.8999999999999773
- 30
-0.0
- 11
-100.0
- 21
-300.2999999999999545
- 31
-0.0
-  0
-LINE
-  5
-10F
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-100.0
- 20
-330.8999999999999773
- 30
-0.0
- 11
-94.0000000000000142
- 21
-331.5
- 31
-0.0
-  0
-LINE
-  5
-110
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-94.0000000000000142
- 20
-331.5
- 30
-0.0
- 11
-94.0
- 21
-341.1000000000000227
- 31
-0.0
-  0
-LINE
-  5
-111
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-94.0
- 20
-341.1000000000000227
- 30
-0.0
- 11
-100.0
- 21
-341.7000000000000455
- 31
-0.0
-  0
-LINE
-  5
-112
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-100.0
- 20
-344.0
- 30
-0.0
- 11
-100.0
- 21
-341.7000000000000455
- 31
-0.0
-  0
-LINE
-  5
-113
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-100.0
- 20
-300.2999999999999545
- 30
-0.0
- 11
-100.0
- 21
-298.0
- 31
-0.0
-  0
-LINE
-  5
-114
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-175.7000000000000455
- 20
-344.0
- 30
-0.0
- 11
-175.7000000000000455
- 21
-298.0
- 31
-0.0
-  0
-INSERT
-  5
-115
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-T-slot-male-3mm
- 10
-155.0
- 20
-298.0
- 30
-0.0
- 44
-1.0
- 45
-1.0
-  0
-INSERT
-  5
-116
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-T-slot-male-3mm
- 10
-155.0
- 20
-344.0
- 30
-0.0
- 41
-1.0
- 42
--1.0
- 43
-1.0
- 44
-1.0
- 45
-1.0
-  0
-LINE
-  5
-117
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-100.0
- 20
-311.1000000000000227
- 30
-0.0
- 11
-100.0
- 21
-330.8999999999999773
- 31
-0.0
-  0
-INSERT
-  5
-118
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-Bar-mount
- 10
-509.9999999999999432
- 20
-321.0
- 30
-0.0
- 41
-1.0
- 42
--1.0
- 43
-1.0
- 50
-330.0000000000000568
- 44
-1.0
- 45
-1.0
-  0
-LINE
-  5
-119
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-489.2999999999998977
- 20
-344.0
- 30
-0.0
- 11
-489.2999999999998977
- 21
-298.0000000000000568
- 31
-0.0
-  0
-INSERT
-  5
-11A
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-T-slot-male-3mm
- 10
-509.9999999999999432
- 20
-297.9999999999999432
- 30
-0.0
- 41
-1.0
- 42
--1.0
- 43
-1.0
- 50
-179.9999999999999716
- 44
-1.0
- 45
-1.0
-  0
-INSERT
-  5
-11B
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-T-slot-male-3mm
- 10
-509.9999999999999432
- 20
-344.0000000000000568
- 30
-0.0
- 50
-179.9999999999999716
- 44
-1.0
- 45
-1.0
-  0
-LINE
-  5
-11C
+EE
 100
 AcDbEntity
 100
@@ -7329,103 +5981,9 @@ ByLayer
  31
 0.0
   0
-LINE
-  5
-11D
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-590.7000000000000455
- 20
-344.0
- 30
-0.0
- 11
-590.7000000000001592
- 21
-298.0000000000000568
- 31
-0.0
-  0
-INSERT
-  5
-11E
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-T-slot-male-3mm
- 10
-570.0000000000001137
- 20
-297.9999999999999432
- 30
-0.0
- 50
-360.0
- 44
-1.0
- 45
-1.0
-  0
-INSERT
-  5
-11F
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-T-slot-male-3mm
- 10
-570.0
- 20
-344.0000000000000568
- 30
-0.0
- 41
-1.0
- 42
--1.0
- 43
-1.0
- 50
-360.0
- 44
-1.0
- 45
-1.0
-  0
 DIMENSION
   5
-120
+EF
 100
 AcDbEntity
   8
@@ -7485,7 +6043,7 @@ AcDbRotatedDimension
   0
 LINE
   5
-121
+F0
 100
 AcDbEntity
 100
@@ -7513,7 +6071,7 @@ ByLayer
   0
 LINE
   5
-122
+F1
 100
 AcDbEntity
 100
@@ -7541,7 +6099,7 @@ ByLayer
   0
 LINE
   5
-123
+F2
 100
 AcDbEntity
 100
@@ -7569,7 +6127,7 @@ ByLayer
   0
 LINE
   5
-124
+F3
 100
 AcDbEntity
 100
@@ -7597,7 +6155,7 @@ ByLayer
   0
 LINE
   5
-125
+F4
 100
 AcDbEntity
 100
@@ -7625,7 +6183,7 @@ ByLayer
   0
 LINE
   5
-126
+F5
 100
 AcDbEntity
 100
@@ -7653,7 +6211,7 @@ ByLayer
   0
 LINE
   5
-127
+F6
 100
 AcDbEntity
 100
@@ -7681,7 +6239,7 @@ ByLayer
   0
 LINE
   5
-128
+F7
 100
 AcDbEntity
 100
@@ -7709,7 +6267,7 @@ ByLayer
   0
 LINE
   5
-129
+F8
 100
 AcDbEntity
 100
@@ -7737,7 +6295,7 @@ ByLayer
   0
 INSERT
   5
-12A
+F9
 100
 AcDbEntity
 100
@@ -7751,7 +6309,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-male-3mm
+T-slot-male-M3
  10
 100.0
  20
@@ -7767,7 +6325,7 @@ T-slot-male-3mm
   0
 INSERT
   5
-12B
+FA
 100
 AcDbEntity
 100
@@ -7781,7 +6339,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-male-3mm
+T-slot-male-M3
  10
 630.0
  20
@@ -7797,7 +6355,7 @@ T-slot-male-3mm
   0
 LINE
   5
-12C
+FB
 100
 AcDbEntity
 100
@@ -7825,7 +6383,7 @@ ByLayer
   0
 LINE
   5
-12D
+FC
 100
 AcDbEntity
 100
@@ -7853,7 +6411,7 @@ ByLayer
   0
 LINE
   5
-12E
+FD
 100
 AcDbEntity
 100
@@ -7881,7 +6439,7 @@ ByLayer
   0
 INSERT
   5
-12F
+FE
 100
 AcDbEntity
 100
@@ -7895,7 +6453,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-male-3mm
+T-slot-male-M3
  10
 630.0
  20
@@ -7911,7 +6469,7 @@ T-slot-male-3mm
   0
 INSERT
   5
-130
+FF
 100
 AcDbEntity
 100
@@ -7925,7 +6483,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-male-3mm
+T-slot-male-M3
  10
 100.0
  20
@@ -7941,7 +6499,7 @@ T-slot-male-3mm
   0
 LINE
   5
-131
+100
 100
 AcDbEntity
 100
@@ -7969,7 +6527,7 @@ ByLayer
   0
 LINE
   5
-132
+101
 100
 AcDbEntity
 100
@@ -7997,7 +6555,7 @@ ByLayer
   0
 LINE
   5
-133
+102
 100
 AcDbEntity
 100
@@ -8025,7 +6583,7 @@ ByLayer
   0
 LINE
   5
-134
+103
 100
 AcDbEntity
 100
@@ -8053,7 +6611,7 @@ ByLayer
   0
 INSERT
   5
-135
+104
 100
 AcDbEntity
 100
@@ -8067,91 +6625,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-female-3mm
- 10
-155.0
- 20
-237.0000000000000568
- 30
-0.0
- 44
-1.0
- 45
-1.0
-  0
-INSERT
-  5
-136
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-T-slot-female-3mm
- 10
-510.0
- 20
-237.0
- 30
-0.0
- 44
-1.0
- 45
-1.0
-  0
-INSERT
-  5
-137
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-T-slot-female-3mm
- 10
-570.0
- 20
-237.0
- 30
-0.0
- 44
-1.0
- 45
-1.0
-  0
-INSERT
-  5
-138
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-T-slot-female-3mm
+T-slot-female-M3
  10
 666.0
  20
@@ -8167,7 +6641,7 @@ T-slot-female-3mm
   0
 INSERT
   5
-139
+105
 100
 AcDbEntity
 100
@@ -8181,7 +6655,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-female-3mm
+T-slot-female-M3
  10
 666.0
  20
@@ -8197,7 +6671,7 @@ T-slot-female-3mm
   0
 INSERT
   5
-13A
+106
 100
 AcDbEntity
 100
@@ -8211,7 +6685,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-female-3mm
+T-slot-female-M3
  10
 284.5
  20
@@ -8227,7 +6701,7 @@ T-slot-female-3mm
   0
 INSERT
   5
-13B
+107
 100
 AcDbEntity
 100
@@ -8241,7 +6715,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-female-3mm
+T-slot-female-M3
  10
 335.5
  20
@@ -8257,7 +6731,7 @@ T-slot-female-3mm
   0
 INSERT
   5
-13C
+108
 100
 AcDbEntity
 100
@@ -8285,7 +6759,7 @@ Bar-mount
   0
 INSERT
   5
-13D
+109
 100
 AcDbEntity
 100
@@ -8313,7 +6787,7 @@ Bar-mount
   0
 LINE
   5
-13E
+10A
 100
 AcDbEntity
 100
@@ -8341,7 +6815,7 @@ ByLayer
   0
 LINE
   5
-13F
+10B
 100
 AcDbEntity
 100
@@ -8369,7 +6843,7 @@ ByLayer
   0
 INSERT
   5
-140
+10C
 100
 AcDbEntity
 100
@@ -8383,7 +6857,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-female-3mm
+T-slot-female-M3
  10
 -315.0
  20
@@ -8405,7 +6879,7 @@ T-slot-female-3mm
   0
 INSERT
   5
-141
+10D
 100
 AcDbEntity
 100
@@ -8419,7 +6893,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-female-3mm
+T-slot-female-M3
  10
 -315.0
  20
@@ -8441,7 +6915,7 @@ T-slot-female-3mm
   0
 INSERT
   5
-142
+10E
 100
 AcDbEntity
 100
@@ -8455,7 +6929,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-male-3mm
+T-slot-male-M3
  10
 31.0000000000001137
  20
@@ -8477,7 +6951,7 @@ T-slot-male-3mm
   0
 LINE
   5
-143
+10F
 100
 AcDbEntity
 100
@@ -8505,7 +6979,7 @@ ByLayer
   0
 ARC
   5
-144
+110
 100
 AcDbEntity
   8
@@ -8535,7 +7009,7 @@ AcDbArc
   0
 LINE
   5
-145
+111
 100
 AcDbEntity
 100
@@ -8563,7 +7037,7 @@ ByLayer
   0
 LINE
   5
-146
+112
 100
 AcDbEntity
 100
@@ -8591,7 +7065,7 @@ ByLayer
   0
 ARC
   5
-147
+113
 100
 AcDbEntity
   8
@@ -8621,7 +7095,7 @@ AcDbArc
   0
 INSERT
   5
-148
+114
 100
 AcDbEntity
 100
@@ -8635,7 +7109,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-male-3mm
+T-slot-male-M3
  10
 31.0
  20
@@ -8657,7 +7131,7 @@ T-slot-male-3mm
   0
 LINE
   5
-149
+115
 100
 AcDbEntity
 100
@@ -8685,7 +7159,7 @@ ByLayer
   0
 LINE
   5
-14A
+116
 100
 AcDbEntity
 100
@@ -8713,7 +7187,7 @@ ByLayer
   0
 LINE
   5
-14B
+117
 100
 AcDbEntity
 100
@@ -8741,7 +7215,7 @@ ByLayer
   0
 LINE
   5
-14C
+118
 100
 AcDbEntity
 100
@@ -8769,7 +7243,7 @@ ByLayer
   0
 ARC
   5
-14D
+119
 100
 AcDbEntity
   8
@@ -8799,7 +7273,7 @@ AcDbArc
   0
 ARC
   5
-14E
+11A
 100
 AcDbEntity
   8
@@ -8829,7 +7303,7 @@ AcDbArc
   0
 LINE
   5
-14F
+11B
 100
 AcDbEntity
 100
@@ -8857,7 +7331,7 @@ ByLayer
   0
 LINE
   5
-150
+11C
 100
 AcDbEntity
 100
@@ -8885,7 +7359,7 @@ ByLayer
   0
 LINE
   5
-151
+11D
 100
 AcDbEntity
 100
@@ -8913,7 +7387,7 @@ ByLayer
   0
 LINE
   5
-152
+11E
 100
 AcDbEntity
 100
@@ -8941,7 +7415,7 @@ ByLayer
   0
 INSERT
   5
-153
+11F
 100
 AcDbEntity
 100
@@ -8955,7 +7429,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-female-3mm
+T-slot-female-M3
  10
 74.0
  20
@@ -8977,7 +7451,7 @@ T-slot-female-3mm
   0
 INSERT
   5
-154
+120
 100
 AcDbEntity
 100
@@ -8991,7 +7465,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-female-3mm
+T-slot-female-M3
  10
 74.0000000000000568
  20
@@ -9013,7 +7487,7 @@ T-slot-female-3mm
   0
 LINE
   5
-155
+121
 100
 AcDbEntity
 100
@@ -9039,449 +7513,9 @@ ByLayer
  31
 0.0
   0
-INSERT
-  5
-156
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-Bar-mount
- 10
-240.0
- 20
--478.0
- 30
-0.0
- 41
-1.0
- 42
--1.0
- 43
-1.0
- 44
-1.0
- 45
-1.0
-  0
-INSERT
-  5
-157
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-Bar-mount
- 10
-380.0
- 20
--478.0
- 30
-0.0
- 41
-1.0
- 42
--1.0
- 43
-1.0
- 44
-1.0
- 45
-1.0
-  0
-ARC
-  5
-158
-100
-AcDbEntity
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-100
-AcDbCircle
- 10
-100.0
- 20
--483.0
- 30
-0.0
- 40
-10.0
-100
-AcDbArc
- 50
-180.0
- 51
-270.0
-  0
-ARC
-  5
-159
-100
-AcDbEntity
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-100
-AcDbCircle
- 10
-630.0
- 20
--483.0
- 30
-0.0
- 40
-10.0
-100
-AcDbArc
- 50
-270.0
- 51
-0.0
-  0
-INSERT
-  5
-15A
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-T-slot-female-3mm
- 10
-96.9999999999999716
- 20
--458.0
- 30
-0.0
- 41
-1.0
- 42
--1.0
- 43
-1.0
- 50
-270.0
- 44
-1.0
- 45
-1.0
-  0
-INSERT
-  5
-15B
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-T-slot-female-3mm
- 10
-633.0
- 20
--458.0
- 30
-0.0
- 41
-1.0
- 42
--1.0
- 43
-1.0
- 50
-270.0
- 44
-1.0
- 45
-1.0
-  0
 LINE
   5
-15C
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-100.0
- 20
--493.0
- 30
-0.0
- 11
-630.0
- 21
--493.0
- 31
-0.0
-  0
-ARC
-  5
-15D
-100
-AcDbEntity
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-100
-AcDbCircle
- 10
-100.0
- 20
--412.0
- 30
-0.0
- 40
-10.0
-100
-AcDbArc
- 50
-90.0000000000000142
- 51
-180.0
-  0
-LINE
-  5
-15E
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-100.0000000000000142
- 20
--402.0
- 30
-0.0
- 11
-630.0
- 21
--402.0
- 31
-0.0
-  0
-ARC
-  5
-15F
-100
-AcDbEntity
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-100
-AcDbCircle
- 10
-630.0
- 20
--412.0
- 30
-0.0
- 40
-10.0
-100
-AcDbArc
- 50
-0.0
- 51
-90.0000000000000142
-  0
-LINE
-  5
-160
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-90.0000000000000568
- 20
--412.0
- 30
-0.0
- 11
-90.0
- 21
--483.0
- 31
-0.0
-  0
-LINE
-  5
-161
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-640.0
- 20
--412.0
- 30
-0.0
- 11
-640.0
- 21
--482.9999999999999432
- 31
-0.0
-  0
-INSERT
-  5
-162
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-T-slot-female-3mm
- 10
-226.5000000000000284
- 20
--415.0
- 30
-0.0
- 41
-1.0
- 42
--1.0
- 43
-1.0
- 44
-1.0
- 45
-1.0
-  0
-INSERT
-  5
-163
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-T-slot-female-3mm
- 10
-503.5
- 20
--415.0
- 30
-0.0
- 41
-1.0
- 42
--1.0
- 43
-1.0
- 44
-1.0
- 45
-1.0
-  0
-LINE
-  5
-164
+122
 100
 AcDbEntity
 100
@@ -9509,7 +7543,7 @@ ByLayer
   0
 INSERT
   5
-165
+123
 100
 AcDbEntity
 100
@@ -9523,43 +7557,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-female-3mm
- 10
-310.0
- 20
--440.5
- 30
-0.0
- 41
-1.0
- 42
--1.0
- 43
-1.0
- 50
-270.0
- 44
-1.0
- 45
-1.0
-  0
-INSERT
-  5
-166
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-T-slot-female-3mm
+T-slot-female-M3
  10
 310.0
  20
@@ -9575,7 +7573,7 @@ T-slot-female-3mm
   0
 INSERT
   5
-167
+124
 100
 AcDbEntity
 100
@@ -9589,7 +7587,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-female-3mm
+T-slot-female-M3
  10
 -288.9999999999999432
  20
@@ -9605,7 +7603,7 @@ T-slot-female-3mm
   0
 ARC
   5
-168
+125
 100
 AcDbEntity
   8
@@ -9635,7 +7633,7 @@ AcDbArc
   0
 LINE
   5
-169
+126
 100
 AcDbEntity
 100
@@ -9663,7 +7661,7 @@ ByLayer
   0
 ARC
   5
-16A
+127
 100
 AcDbEntity
   8
@@ -9693,7 +7691,7 @@ AcDbArc
   0
 INSERT
   5
-16B
+128
 100
 AcDbEntity
 100
@@ -9707,7 +7705,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-female-3mm
+T-slot-female-M3
  10
 775.0
  20
@@ -9721,7 +7719,7 @@ T-slot-female-3mm
   0
 LINE
   5
-16C
+129
 100
 AcDbEntity
 100
@@ -9749,7 +7747,7 @@ ByLayer
   0
 LINE
   5
-16D
+12A
 100
 AcDbEntity
 100
@@ -9777,7 +7775,7 @@ ByLayer
   0
 LINE
   5
-16E
+12B
 100
 AcDbEntity
 100
@@ -9805,7 +7803,7 @@ ByLayer
   0
 ARC
   5
-16F
+12C
 100
 AcDbEntity
   8
@@ -9835,7 +7833,7 @@ AcDbArc
   0
 ARC
   5
-170
+12D
 100
 AcDbEntity
   8
@@ -9865,7 +7863,7 @@ AcDbArc
   0
 ARC
   5
-171
+12E
 100
 AcDbEntity
   8
@@ -9895,7 +7893,7 @@ AcDbArc
   0
 LINE
   5
-172
+12F
 100
 AcDbEntity
 100
@@ -9923,7 +7921,7 @@ ByLayer
   0
 LINE
   5
-173
+130
 100
 AcDbEntity
 100
@@ -9951,7 +7949,7 @@ ByLayer
   0
 LINE
   5
-174
+131
 100
 AcDbEntity
 100
@@ -9979,7 +7977,7 @@ ByLayer
   0
 ARC
   5
-175
+132
 100
 AcDbEntity
   8
@@ -10009,7 +8007,7 @@ AcDbArc
   0
 ARC
   5
-176
+133
 100
 AcDbEntity
   8
@@ -10039,7 +8037,7 @@ AcDbArc
   0
 ARC
   5
-177
+134
 100
 AcDbEntity
   8
@@ -10069,63 +8067,7 @@ AcDbArc
   0
 LINE
   5
-178
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-530.7000000000000455
- 20
-343.9999999999999432
- 30
-0.0
- 11
-549.2999999999999545
- 21
-344.0
- 31
-0.0
-  0
-LINE
-  5
-179
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-549.3000000000000682
- 20
-297.9999999999999432
- 30
-0.0
- 11
-530.7000000000000455
- 21
-297.9999999999999432
- 31
-0.0
-  0
-LINE
-  5
-17A
+135
 100
 AcDbEntity
 100
@@ -10153,7 +8095,7 @@ ByLayer
   0
 LINE
   5
-17B
+136
 100
 AcDbEntity
 100
@@ -10181,7 +8123,7 @@ ByLayer
   0
 LINE
   5
-17C
+137
 100
 AcDbEntity
 100
@@ -10209,7 +8151,7 @@ ByLayer
   0
 LINE
   5
-17D
+138
 100
 AcDbEntity
 100
@@ -10237,7 +8179,7 @@ ByLayer
   0
 LINE
   5
-17E
+139
 100
 AcDbEntity
 100
@@ -10265,7 +8207,7 @@ ByLayer
   0
 LINE
   5
-17F
+13A
 100
 AcDbEntity
 100
@@ -10293,7 +8235,7 @@ ByLayer
   0
 INSERT
   5
-180
+13B
 100
 AcDbEntity
 100
@@ -10307,7 +8249,7 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-male-3mm
+T-slot-male-M3
  10
 695.0
  20
@@ -10323,7 +8265,7 @@ T-slot-male-3mm
   0
 LINE
   5
-181
+13C
 100
 AcDbEntity
 100
@@ -10351,7 +8293,7 @@ ByLayer
   0
 LINE
   5
-182
+13D
 100
 AcDbEntity
 100
@@ -10379,7 +8321,7 @@ ByLayer
   0
 LINE
   5
-183
+13E
 100
 AcDbEntity
 100
@@ -10407,7 +8349,7 @@ ByLayer
   0
 LINE
   5
-184
+13F
 100
 AcDbEntity
 100
@@ -10433,271 +8375,9 @@ ByLayer
  31
 0.0
   0
-INSERT
-  5
-185
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-Motor-mount-centering
- 10
-540.0
- 20
-321.0
- 30
-0.0
- 44
-1.0
- 45
-1.0
-  0
 LINE
   5
-186
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-629.8999999999999773
- 20
-413.7000000000000455
- 30
-0.0
- 11
-629.8999999999999773
- 21
-418.0
- 31
-0.0
-  0
-INSERT
-  5
-187
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-T-slot-male-3mm
- 10
-629.8999999999999773
- 20
-393.0
- 30
-0.0
- 50
-90.0
- 44
-1.0
- 45
-1.0
-  0
-LINE
-  5
-188
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-629.8999999999999773
- 20
-418.0
- 30
-0.0
- 11
-99.8999999999999773
- 21
-418.0
- 31
-0.0
-  0
-LINE
-  5
-189
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-629.8999999999999773
- 20
-360.0
- 30
-0.0
- 11
-99.8999999999999773
- 21
-360.0000000000000568
- 31
-0.0
-  0
-LINE
-  5
-18A
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-629.8999999999999773
- 20
-372.2999999999999545
- 30
-0.0
- 11
-629.8999999999999773
- 21
-360.0
- 31
-0.0
-  0
-LINE
-  5
-18B
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-99.8999999999999773
- 20
-413.7000000000000455
- 30
-0.0
- 11
-99.8999999999999773
- 21
-418.0
- 31
-0.0
-  0
-INSERT
-  5
-18C
-100
-AcDbEntity
-100
-AcDbBlockReference
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
-  2
-T-slot-male-3mm
- 10
-99.8999999999999773
- 20
-393.0
- 30
-0.0
- 41
-1.0
- 42
--1.0
- 43
-1.0
- 50
-90.0
- 44
-1.0
- 45
-1.0
-  0
-LINE
-  5
-18D
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-99.899999999999892
- 20
-372.3000000000000114
- 30
-0.0
- 11
-99.8999999999999631
- 21
-360.0000000000000568
- 31
-0.0
-  0
-LINE
-  5
-18E
+140
 100
 AcDbEntity
 100
@@ -10723,6 +8403,2280 @@ ByLayer
  31
 0.0
   0
+LINE
+  5
+141
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+629.8999999999999773
+ 20
+283.7000000000000455
+ 30
+0.0
+ 11
+629.8999999999999773
+ 21
+288.0
+ 31
+0.0
+  0
+INSERT
+  5
+142
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+T-slot-male-M3
+ 10
+629.8999999999999773
+ 20
+263.0
+ 30
+0.0
+ 50
+90.0
+ 44
+1.0
+ 45
+1.0
+  0
+LINE
+  5
+143
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+629.8999999999999773
+ 20
+288.0
+ 30
+0.0
+ 11
+99.8999999999999773
+ 21
+288.0
+ 31
+0.0
+  0
+LINE
+  5
+144
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+629.8999999999999773
+ 20
+230.0
+ 30
+0.0
+ 11
+99.8999999999999773
+ 21
+230.0000000000000568
+ 31
+0.0
+  0
+LINE
+  5
+145
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+629.8999999999999773
+ 20
+242.2999999999999545
+ 30
+0.0
+ 11
+629.8999999999999773
+ 21
+230.0
+ 31
+0.0
+  0
+INSERT
+  5
+146
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+Motor-mount-centering
+ 10
+125.0
+ 20
+321.0
+ 30
+0.0
+ 50
+180.0
+ 44
+1.0
+ 45
+1.0
+  0
+INSERT
+  5
+147
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+Bar-mount
+ 10
+155.0
+ 20
+321.0
+ 30
+0.0
+ 50
+210.0
+ 44
+1.0
+ 45
+1.0
+  0
+LINE
+  5
+148
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+99.8999999999999773
+ 20
+283.7000000000000455
+ 30
+0.0
+ 11
+99.8999999999999773
+ 21
+288.0
+ 31
+0.0
+  0
+INSERT
+  5
+149
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+T-slot-male-M3
+ 10
+99.8999999999999773
+ 20
+263.0
+ 30
+0.0
+ 41
+1.0
+ 42
+-1.0
+ 43
+1.0
+ 50
+90.0
+ 44
+1.0
+ 45
+1.0
+  0
+LINE
+  5
+14A
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+99.899999999999892
+ 20
+242.3000000000000114
+ 30
+0.0
+ 11
+99.8999999999999631
+ 21
+230.0000000000000568
+ 31
+0.0
+  0
+LINE
+  5
+14B
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+134.2999999999999545
+ 20
+344.0
+ 30
+0.0
+ 11
+100.0
+ 21
+344.0
+ 31
+0.0
+  0
+LINE
+  5
+14C
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+100.0
+ 20
+298.0
+ 30
+0.0
+ 11
+134.2999999999999545
+ 21
+298.0
+ 31
+0.0
+  0
+LINE
+  5
+14D
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+100.0
+ 20
+311.1000000000000227
+ 30
+0.0
+ 11
+94.0
+ 21
+310.5
+ 31
+0.0
+  0
+LINE
+  5
+14E
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+94.0
+ 20
+310.5
+ 30
+0.0
+ 11
+93.9999999999999858
+ 21
+300.8999999999999773
+ 31
+0.0
+  0
+LINE
+  5
+14F
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+93.9999999999999858
+ 20
+300.8999999999999773
+ 30
+0.0
+ 11
+100.0
+ 21
+300.2999999999999545
+ 31
+0.0
+  0
+LINE
+  5
+150
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+100.0
+ 20
+330.8999999999999773
+ 30
+0.0
+ 11
+94.0000000000000142
+ 21
+331.5
+ 31
+0.0
+  0
+LINE
+  5
+151
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+94.0000000000000142
+ 20
+331.5
+ 30
+0.0
+ 11
+94.0
+ 21
+341.1000000000000227
+ 31
+0.0
+  0
+LINE
+  5
+152
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+94.0
+ 20
+341.1000000000000227
+ 30
+0.0
+ 11
+100.0
+ 21
+341.7000000000000455
+ 31
+0.0
+  0
+LINE
+  5
+153
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+100.0
+ 20
+344.0
+ 30
+0.0
+ 11
+100.0
+ 21
+341.7000000000000455
+ 31
+0.0
+  0
+LINE
+  5
+154
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+100.0
+ 20
+300.2999999999999545
+ 30
+0.0
+ 11
+100.0
+ 21
+298.0
+ 31
+0.0
+  0
+LINE
+  5
+155
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+175.7000000000000455
+ 20
+344.0
+ 30
+0.0
+ 11
+175.7000000000000455
+ 21
+298.0
+ 31
+0.0
+  0
+INSERT
+  5
+156
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+T-slot-male-M3
+ 10
+155.0
+ 20
+298.0
+ 30
+0.0
+ 44
+1.0
+ 45
+1.0
+  0
+INSERT
+  5
+157
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+T-slot-male-M3
+ 10
+155.0
+ 20
+344.0
+ 30
+0.0
+ 41
+1.0
+ 42
+-1.0
+ 43
+1.0
+ 44
+1.0
+ 45
+1.0
+  0
+LINE
+  5
+158
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+100.0
+ 20
+311.1000000000000227
+ 30
+0.0
+ 11
+100.0
+ 21
+330.8999999999999773
+ 31
+0.0
+  0
+INSERT
+  5
+159
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+Bar-mount
+ 10
+509.9999999999999432
+ 20
+321.0
+ 30
+0.0
+ 41
+1.0
+ 42
+-1.0
+ 43
+1.0
+ 50
+330.0000000000000568
+ 44
+1.0
+ 45
+1.0
+  0
+LINE
+  5
+15A
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+489.2999999999998977
+ 20
+344.0
+ 30
+0.0
+ 11
+489.2999999999998977
+ 21
+298.0000000000000568
+ 31
+0.0
+  0
+INSERT
+  5
+15B
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+T-slot-male-M3
+ 10
+509.9999999999999432
+ 20
+297.9999999999999432
+ 30
+0.0
+ 41
+1.0
+ 42
+-1.0
+ 43
+1.0
+ 50
+179.9999999999999716
+ 44
+1.0
+ 45
+1.0
+  0
+INSERT
+  5
+15C
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+T-slot-male-M3
+ 10
+509.9999999999999432
+ 20
+344.0000000000000568
+ 30
+0.0
+ 50
+179.9999999999999716
+ 44
+1.0
+ 45
+1.0
+  0
+LINE
+  5
+15D
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+590.7000000000000455
+ 20
+344.0
+ 30
+0.0
+ 11
+590.7000000000001592
+ 21
+298.0000000000000568
+ 31
+0.0
+  0
+INSERT
+  5
+15E
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+T-slot-male-M3
+ 10
+570.0000000000001137
+ 20
+297.9999999999999432
+ 30
+0.0
+ 50
+360.0
+ 44
+1.0
+ 45
+1.0
+  0
+INSERT
+  5
+15F
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+T-slot-male-M3
+ 10
+570.0
+ 20
+344.0000000000000568
+ 30
+0.0
+ 41
+1.0
+ 42
+-1.0
+ 43
+1.0
+ 50
+360.0
+ 44
+1.0
+ 45
+1.0
+  0
+INSERT
+  5
+160
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+T-slot-female-M3
+ 10
+155.0
+ 20
+237.0000000000000568
+ 30
+0.0
+ 44
+1.0
+ 45
+1.0
+  0
+INSERT
+  5
+161
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+T-slot-female-M3
+ 10
+510.0
+ 20
+237.0
+ 30
+0.0
+ 44
+1.0
+ 45
+1.0
+  0
+INSERT
+  5
+162
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+T-slot-female-M3
+ 10
+570.0
+ 20
+237.0
+ 30
+0.0
+ 44
+1.0
+ 45
+1.0
+  0
+LINE
+  5
+163
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+530.7000000000000455
+ 20
+343.9999999999999432
+ 30
+0.0
+ 11
+549.2999999999999545
+ 21
+344.0
+ 31
+0.0
+  0
+LINE
+  5
+164
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+549.3000000000000682
+ 20
+297.9999999999999432
+ 30
+0.0
+ 11
+530.7000000000000455
+ 21
+297.9999999999999432
+ 31
+0.0
+  0
+INSERT
+  5
+165
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+Motor-mount-centering
+ 10
+540.0
+ 20
+321.0
+ 30
+0.0
+ 44
+1.0
+ 45
+1.0
+  0
+LINE
+  5
+166
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+629.8999999999999773
+ 20
+413.7000000000000455
+ 30
+0.0
+ 11
+629.8999999999999773
+ 21
+418.0
+ 31
+0.0
+  0
+INSERT
+  5
+167
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+T-slot-male-M3
+ 10
+629.8999999999999773
+ 20
+393.0
+ 30
+0.0
+ 50
+90.0
+ 44
+1.0
+ 45
+1.0
+  0
+LINE
+  5
+168
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+629.8999999999999773
+ 20
+418.0
+ 30
+0.0
+ 11
+99.8999999999999773
+ 21
+418.0
+ 31
+0.0
+  0
+LINE
+  5
+169
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+629.8999999999999773
+ 20
+360.0
+ 30
+0.0
+ 11
+99.8999999999999773
+ 21
+360.0000000000000568
+ 31
+0.0
+  0
+LINE
+  5
+16A
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+629.8999999999999773
+ 20
+372.2999999999999545
+ 30
+0.0
+ 11
+629.8999999999999773
+ 21
+360.0
+ 31
+0.0
+  0
+LINE
+  5
+16B
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+99.8999999999999773
+ 20
+413.7000000000000455
+ 30
+0.0
+ 11
+99.8999999999999773
+ 21
+418.0
+ 31
+0.0
+  0
+INSERT
+  5
+16C
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+T-slot-male-M3
+ 10
+99.8999999999999773
+ 20
+393.0
+ 30
+0.0
+ 41
+1.0
+ 42
+-1.0
+ 43
+1.0
+ 50
+90.0
+ 44
+1.0
+ 45
+1.0
+  0
+LINE
+  5
+16D
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+99.899999999999892
+ 20
+372.3000000000000114
+ 30
+0.0
+ 11
+99.8999999999999631
+ 21
+360.0000000000000568
+ 31
+0.0
+  0
+INSERT
+  5
+16E
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+T-slot-female-M3
+ 10
+155.0
+ 20
+367.0000000000000568
+ 30
+0.0
+ 44
+1.0
+ 45
+1.0
+  0
+INSERT
+  5
+16F
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+T-slot-female-M3
+ 10
+510.0
+ 20
+367.0
+ 30
+0.0
+ 44
+1.0
+ 45
+1.0
+  0
+INSERT
+  5
+170
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+T-slot-female-M3
+ 10
+570.0
+ 20
+367.0
+ 30
+0.0
+ 44
+1.0
+ 45
+1.0
+  0
+ARC
+  5
+171
+100
+AcDbEntity
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+177.0
+ 20
+397.0
+ 30
+0.0
+ 40
+3.0
+100
+AcDbArc
+ 50
+0.0
+ 51
+90.0
+  0
+LINE
+  5
+172
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+180.0
+ 20
+383.0
+ 30
+0.0
+ 11
+180.0
+ 21
+397.0
+ 31
+0.0
+  0
+ARC
+  5
+173
+100
+AcDbEntity
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+177.0
+ 20
+383.0
+ 30
+0.0
+ 40
+3.0
+100
+AcDbArc
+ 50
+270.0
+ 51
+0.0
+  0
+LINE
+  5
+174
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+163.0
+ 20
+380.0
+ 30
+0.0
+ 11
+177.0
+ 21
+380.0
+ 31
+0.0
+  0
+ARC
+  5
+175
+100
+AcDbEntity
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+163.0
+ 20
+383.0
+ 30
+0.0
+ 40
+3.0
+100
+AcDbArc
+ 50
+180.0
+ 51
+270.0
+  0
+LINE
+  5
+176
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+160.0
+ 20
+397.0
+ 30
+0.0
+ 11
+160.0
+ 21
+383.0
+ 31
+0.0
+  0
+LINE
+  5
+177
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+177.0
+ 20
+400.0
+ 30
+0.0
+ 11
+163.0
+ 21
+400.0
+ 31
+0.0
+  0
+ARC
+  5
+178
+100
+AcDbEntity
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+163.0
+ 20
+397.0
+ 30
+0.0
+ 40
+3.0
+100
+AcDbArc
+ 50
+90.0
+ 51
+180.0
+  0
+ARC
+  5
+179
+100
+AcDbEntity
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+592.0
+ 20
+397.0
+ 30
+0.0
+ 40
+3.0
+100
+AcDbArc
+ 50
+0.0
+ 51
+90.0
+  0
+LINE
+  5
+17A
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+595.0
+ 20
+383.0
+ 30
+0.0
+ 11
+595.0
+ 21
+397.0
+ 31
+0.0
+  0
+ARC
+  5
+17B
+100
+AcDbEntity
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+592.0
+ 20
+383.0
+ 30
+0.0
+ 40
+3.0
+100
+AcDbArc
+ 50
+270.0
+ 51
+0.0
+  0
+LINE
+  5
+17C
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+578.0
+ 20
+380.0
+ 30
+0.0
+ 11
+592.0
+ 21
+380.0
+ 31
+0.0
+  0
+ARC
+  5
+17D
+100
+AcDbEntity
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+578.0
+ 20
+383.0
+ 30
+0.0
+ 40
+3.0
+100
+AcDbArc
+ 50
+180.0
+ 51
+270.0
+  0
+LINE
+  5
+17E
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+575.0
+ 20
+397.0
+ 30
+0.0
+ 11
+575.0
+ 21
+383.0
+ 31
+0.0
+  0
+LINE
+  5
+17F
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+592.0
+ 20
+400.0
+ 30
+0.0
+ 11
+578.0
+ 21
+400.0
+ 31
+0.0
+  0
+ARC
+  5
+180
+100
+AcDbEntity
+  8
+Crossbeam
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+578.0
+ 20
+397.0
+ 30
+0.0
+ 40
+3.0
+100
+AcDbArc
+ 50
+90.0
+ 51
+180.0
+  0
+INSERT
+  5
+181
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Front/Back panel
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+Bar-mount
+ 10
+240.0
+ 20
+160.0
+ 30
+0.0
+ 44
+1.0
+ 45
+1.0
+  0
+INSERT
+  5
+182
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Front/Back panel
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+Bar-mount
+ 10
+380.0
+ 20
+160.0
+ 30
+0.0
+ 44
+1.0
+ 45
+1.0
+  0
+ARC
+  5
+183
+100
+AcDbEntity
+  8
+Front/Back panel
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+100.0
+ 20
+165.0
+ 30
+0.0
+ 40
+10.0
+100
+AcDbArc
+ 50
+90.0
+ 51
+180.0
+  0
+ARC
+  5
+184
+100
+AcDbEntity
+  8
+Front/Back panel
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+630.0
+ 20
+165.0
+ 30
+0.0
+ 40
+10.0
+100
+AcDbArc
+ 50
+0.0
+ 51
+90.0
+  0
+INSERT
+  5
+185
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Front/Back panel
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+T-slot-female-M3
+ 10
+97.0
+ 20
+140.0
+ 30
+0.0
+ 50
+90.0
+ 44
+1.0
+ 45
+1.0
+  0
+INSERT
+  5
+186
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Front/Back panel
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+T-slot-female-M3
+ 10
+633.0
+ 20
+140.0
+ 30
+0.0
+ 50
+90.0
+ 44
+1.0
+ 45
+1.0
+  0
+LINE
+  5
+187
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Front/Back panel
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+100.0
+ 20
+175.0
+ 30
+0.0
+ 11
+630.0
+ 21
+175.0
+ 31
+0.0
+  0
+ARC
+  5
+188
+100
+AcDbEntity
+  8
+Front/Back panel
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+100.0
+ 20
+94.0
+ 30
+0.0
+ 40
+10.0
+100
+AcDbArc
+ 50
+180.0
+ 51
+270.0
+  0
+LINE
+  5
+189
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Front/Back panel
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+100.0
+ 20
+84.0
+ 30
+0.0
+ 11
+630.0
+ 21
+84.0
+ 31
+0.0
+  0
+ARC
+  5
+18A
+100
+AcDbEntity
+  8
+Front/Back panel
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+630.0
+ 20
+94.0
+ 30
+0.0
+ 40
+10.0
+100
+AcDbArc
+ 50
+270.0
+ 51
+0.0
+  0
+LINE
+  5
+18B
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Front/Back panel
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+90.0
+ 20
+94.0
+ 30
+0.0
+ 11
+90.0
+ 21
+165.0
+ 31
+0.0
+  0
+LINE
+  5
+18C
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Front/Back panel
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+640.0
+ 20
+94.0
+ 30
+0.0
+ 11
+640.0
+ 21
+165.0
+ 31
+0.0
+  0
+INSERT
+  5
+18D
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Front/Back panel
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+T-slot-female-M3
+ 10
+284.5
+ 20
+122.5
+ 30
+0.0
+ 50
+90.0
+ 44
+1.0
+ 45
+1.0
+  0
+INSERT
+  5
+18E
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Front/Back panel
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+T-slot-female-M3
+ 10
+335.5
+ 20
+122.5
+ 30
+0.0
+ 50
+90.0
+ 44
+1.0
+ 45
+1.0
+  0
 INSERT
   5
 18F
@@ -10731,7 +10685,7 @@ AcDbEntity
 100
 AcDbBlockReference
   8
-0
+Front/Back panel
  62
 256
 370
@@ -10739,11 +10693,11 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-female-3mm
+T-slot-female-M3
  10
-155.0
+226.5
  20
-367.0000000000000568
+97.0
  30
 0.0
  44
@@ -10759,7 +10713,7 @@ AcDbEntity
 100
 AcDbBlockReference
   8
-0
+Front/Back panel
  62
 256
 370
@@ -10767,11 +10721,11 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-female-3mm
+T-slot-female-M3
  10
-510.0
+503.5
  20
-367.0
+97.0
  30
 0.0
  44
@@ -10787,7 +10741,7 @@ AcDbEntity
 100
 AcDbBlockReference
   8
-0
+Front/Back panel
  62
 256
 370
@@ -10795,13 +10749,53 @@ AcDbBlockReference
   6
 ByLayer
   2
-T-slot-female-3mm
+Bar-mount
  10
-570.0
+240.0
  20
-367.0
+-478.0
  30
 0.0
+ 41
+1.0
+ 42
+-1.0
+ 43
+1.0
+ 44
+1.0
+ 45
+1.0
+  0
+INSERT
+  5
+192
+100
+AcDbEntity
+100
+AcDbBlockReference
+  8
+Front/Back panel
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+Bar-mount
+ 10
+380.0
+ 20
+-478.0
+ 30
+0.0
+ 41
+1.0
+ 42
+-1.0
+ 43
+1.0
  44
 1.0
  45
@@ -10809,11 +10803,11 @@ T-slot-female-3mm
   0
 ARC
   5
-192
+193
 100
 AcDbEntity
   8
-0
+Front/Back panel
  62
 256
 370
@@ -10823,47 +10817,19 @@ ByLayer
 100
 AcDbCircle
  10
-177.0
+100.0
  20
-397.0
+-483.0
  30
 0.0
  40
-3.0
+10.0
 100
 AcDbArc
  50
-0.0
+180.0
  51
-90.0
-  0
-LINE
-  5
-193
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-180.0
- 20
-383.0
- 30
-0.0
- 11
-180.0
- 21
-397.0
- 31
-0.0
+270.0
   0
 ARC
   5
@@ -10871,7 +10837,7 @@ ARC
 100
 AcDbEntity
   8
-0
+Front/Back panel
  62
 256
 370
@@ -10881,13 +10847,13 @@ ByLayer
 100
 AcDbCircle
  10
-177.0
+630.0
  20
-383.0
+-483.0
  30
 0.0
  40
-3.0
+10.0
 100
 AcDbArc
  50
@@ -10895,63 +10861,77 @@ AcDbArc
  51
 0.0
   0
-LINE
+INSERT
   5
 195
 100
 AcDbEntity
 100
-AcDbLine
+AcDbBlockReference
   8
-0
+Front/Back panel
  62
 256
 370
 -1
   6
 ByLayer
+  2
+T-slot-female-M3
  10
-163.0
+96.9999999999999716
  20
-380.0
+-458.0
  30
 0.0
- 11
-177.0
- 21
-380.0
- 31
-0.0
+ 41
+1.0
+ 42
+-1.0
+ 43
+1.0
+ 50
+270.0
+ 44
+1.0
+ 45
+1.0
   0
-ARC
+INSERT
   5
 196
 100
 AcDbEntity
+100
+AcDbBlockReference
   8
-0
+Front/Back panel
  62
 256
 370
 -1
   6
 ByLayer
-100
-AcDbCircle
+  2
+T-slot-female-M3
  10
-163.0
+633.0
  20
-383.0
+-458.0
  30
 0.0
- 40
-3.0
-100
-AcDbArc
+ 41
+1.0
+ 42
+-1.0
+ 43
+1.0
  50
-180.0
- 51
 270.0
+ 44
+1.0
+ 45
+1.0
   0
 LINE
   5
@@ -10961,7 +10941,7 @@ AcDbEntity
 100
 AcDbLine
   8
-0
+Front/Back panel
  62
 256
 370
@@ -10969,53 +10949,25 @@ AcDbLine
   6
 ByLayer
  10
-160.0
+100.0
  20
-397.0
+-493.0
  30
 0.0
  11
-160.0
+630.0
  21
-383.0
- 31
-0.0
-  0
-LINE
-  5
-198
-100
-AcDbEntity
-100
-AcDbLine
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-177.0
- 20
-400.0
- 30
-0.0
- 11
-163.0
- 21
-400.0
+-493.0
  31
 0.0
   0
 ARC
   5
-199
+198
 100
 AcDbEntity
   8
-0
+Front/Back panel
  62
 256
 370
@@ -11025,19 +10977,47 @@ ByLayer
 100
 AcDbCircle
  10
-163.0
+100.0
  20
-397.0
+-412.0
  30
 0.0
  40
-3.0
+10.0
 100
 AcDbArc
  50
-90.0
+90.0000000000000142
  51
 180.0
+  0
+LINE
+  5
+199
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Front/Back panel
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+100.0000000000000142
+ 20
+-402.0
+ 30
+0.0
+ 11
+630.0
+ 21
+-402.0
+ 31
+0.0
   0
 ARC
   5
@@ -11045,7 +11025,7 @@ ARC
 100
 AcDbEntity
   8
-0
+Front/Back panel
  62
 256
 370
@@ -11055,19 +11035,19 @@ ByLayer
 100
 AcDbCircle
  10
-592.0
+630.0
  20
-397.0
+-412.0
  30
 0.0
  40
-3.0
+10.0
 100
 AcDbArc
  50
 0.0
  51
-90.0
+90.0000000000000142
   0
 LINE
   5
@@ -11077,7 +11057,7 @@ AcDbEntity
 100
 AcDbLine
   8
-0
+Front/Back panel
  62
 256
 370
@@ -11085,113 +11065,157 @@ AcDbLine
   6
 ByLayer
  10
-595.0
+90.0000000000000568
  20
-383.0
+-412.0
  30
 0.0
  11
-595.0
+90.0
  21
-397.0
+-483.0
  31
 0.0
   0
-ARC
+LINE
   5
 19C
 100
 AcDbEntity
+100
+AcDbLine
   8
-0
+Front/Back panel
  62
 256
 370
 -1
   6
 ByLayer
-100
-AcDbCircle
  10
-592.0
+640.0
  20
-383.0
+-412.0
  30
 0.0
- 40
-3.0
-100
-AcDbArc
- 50
-270.0
- 51
+ 11
+640.0
+ 21
+-482.9999999999999432
+ 31
 0.0
   0
-LINE
+INSERT
   5
 19D
 100
 AcDbEntity
 100
-AcDbLine
+AcDbBlockReference
   8
-0
+Front/Back panel
  62
 256
 370
 -1
   6
 ByLayer
+  2
+T-slot-female-M3
  10
-578.0
+226.5000000000000284
  20
-380.0
+-415.0
  30
 0.0
- 11
-592.0
- 21
-380.0
- 31
-0.0
+ 41
+1.0
+ 42
+-1.0
+ 43
+1.0
+ 44
+1.0
+ 45
+1.0
   0
-ARC
+INSERT
   5
 19E
 100
 AcDbEntity
+100
+AcDbBlockReference
   8
-0
+Front/Back panel
  62
 256
 370
 -1
   6
 ByLayer
-100
-AcDbCircle
+  2
+T-slot-female-M3
  10
-578.0
+503.5
  20
-383.0
+-415.0
  30
 0.0
- 40
-3.0
-100
-AcDbArc
- 50
-180.0
- 51
-270.0
+ 41
+1.0
+ 42
+-1.0
+ 43
+1.0
+ 44
+1.0
+ 45
+1.0
   0
-LINE
+INSERT
   5
 19F
 100
 AcDbEntity
 100
-AcDbLine
+AcDbBlockReference
+  8
+Front/Back panel
+ 62
+256
+370
+-1
+  6
+ByLayer
+  2
+T-slot-female-M3
+ 10
+310.0
+ 20
+-440.5
+ 30
+0.0
+ 41
+1.0
+ 42
+-1.0
+ 43
+1.0
+ 50
+270.0
+ 44
+1.0
+ 45
+1.0
+  0
+CIRCLE
+  5
+1A0
+100
+AcDbEntity
+100
+AcDbCircle
   8
 0
  62
@@ -11201,21 +11225,41 @@ AcDbLine
   6
 ByLayer
  10
-575.0
+868.0
  20
-397.0
+100.0
  30
 0.0
- 11
-575.0
- 21
-383.0
- 31
+ 40
+1.5
+  0
+CIRCLE
+  5
+1A1
+100
+AcDbEntity
+100
+AcDbCircle
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+852.0
+ 20
+100.0
+ 30
 0.0
+ 40
+1.5
   0
 LINE
   5
-1A0
+1A2
 100
 AcDbEntity
 100
@@ -11229,21 +11273,21 @@ AcDbLine
   6
 ByLayer
  10
-592.0
+852.0
  20
-400.0
+105.0
  30
 0.0
  11
-578.0
+868.0
  21
-400.0
+105.0
  31
 0.0
   0
 ARC
   5
-1A1
+1A3
 100
 AcDbEntity
   8
@@ -11257,19 +11301,1029 @@ ByLayer
 100
 AcDbCircle
  10
-578.0
+852.0
  20
-397.0
+100.0
  30
 0.0
  40
-3.0
+5.0
 100
 AcDbArc
  50
 90.0
  51
-180.0
+270.0
+  0
+ARC
+  5
+1A4
+100
+AcDbEntity
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+868.0
+ 20
+100.0
+ 30
+0.0
+ 40
+5.0
+100
+AcDbArc
+ 50
+270.0
+ 51
+90.0
+  0
+CIRCLE
+  5
+1A5
+100
+AcDbEntity
+100
+AcDbCircle
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+868.0
+ 20
+110.0
+ 30
+0.0
+ 40
+1.5
+  0
+CIRCLE
+  5
+1A6
+100
+AcDbEntity
+100
+AcDbCircle
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+852.0
+ 20
+110.0
+ 30
+0.0
+ 40
+1.5
+  0
+LINE
+  5
+1A7
+100
+AcDbEntity
+100
+AcDbLine
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+852.0
+ 20
+115.0
+ 30
+0.0
+ 11
+868.0
+ 21
+115.0
+ 31
+0.0
+  0
+ARC
+  5
+1A8
+100
+AcDbEntity
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+852.0
+ 20
+110.0
+ 30
+0.0
+ 40
+5.0
+100
+AcDbArc
+ 50
+90.0
+ 51
+270.0
+  0
+ARC
+  5
+1A9
+100
+AcDbEntity
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+868.0
+ 20
+110.0
+ 30
+0.0
+ 40
+5.0
+100
+AcDbArc
+ 50
+270.0
+ 51
+90.0
+  0
+CIRCLE
+  5
+1AA
+100
+AcDbEntity
+100
+AcDbCircle
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+868.0
+ 20
+120.0
+ 30
+0.0
+ 40
+1.5
+  0
+CIRCLE
+  5
+1AB
+100
+AcDbEntity
+100
+AcDbCircle
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+852.0
+ 20
+120.0
+ 30
+0.0
+ 40
+1.5
+  0
+LINE
+  5
+1AC
+100
+AcDbEntity
+100
+AcDbLine
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+852.0
+ 20
+125.0
+ 30
+0.0
+ 11
+868.0
+ 21
+125.0
+ 31
+0.0
+  0
+ARC
+  5
+1AD
+100
+AcDbEntity
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+852.0
+ 20
+120.0
+ 30
+0.0
+ 40
+5.0
+100
+AcDbArc
+ 50
+90.0
+ 51
+270.0
+  0
+ARC
+  5
+1AE
+100
+AcDbEntity
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+868.0
+ 20
+120.0
+ 30
+0.0
+ 40
+5.0
+100
+AcDbArc
+ 50
+270.0
+ 51
+90.0
+  0
+CIRCLE
+  5
+1AF
+100
+AcDbEntity
+100
+AcDbCircle
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+868.0
+ 20
+130.0
+ 30
+0.0
+ 40
+1.5
+  0
+CIRCLE
+  5
+1B0
+100
+AcDbEntity
+100
+AcDbCircle
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+852.0
+ 20
+130.0
+ 30
+0.0
+ 40
+1.5
+  0
+LINE
+  5
+1B1
+100
+AcDbEntity
+100
+AcDbLine
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+852.0
+ 20
+135.0
+ 30
+0.0
+ 11
+868.0
+ 21
+135.0
+ 31
+0.0
+  0
+ARC
+  5
+1B2
+100
+AcDbEntity
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+852.0
+ 20
+130.0
+ 30
+0.0
+ 40
+5.0
+100
+AcDbArc
+ 50
+90.0
+ 51
+270.0
+  0
+ARC
+  5
+1B3
+100
+AcDbEntity
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+868.0
+ 20
+130.0
+ 30
+0.0
+ 40
+5.0
+100
+AcDbArc
+ 50
+270.0
+ 51
+90.0
+  0
+CIRCLE
+  5
+1B4
+100
+AcDbEntity
+100
+AcDbCircle
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+868.0
+ 20
+140.0
+ 30
+0.0
+ 40
+1.5
+  0
+CIRCLE
+  5
+1B5
+100
+AcDbEntity
+100
+AcDbCircle
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+852.0
+ 20
+140.0
+ 30
+0.0
+ 40
+1.5
+  0
+LINE
+  5
+1B6
+100
+AcDbEntity
+100
+AcDbLine
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+852.0
+ 20
+145.0
+ 30
+0.0
+ 11
+868.0
+ 21
+145.0
+ 31
+0.0
+  0
+ARC
+  5
+1B7
+100
+AcDbEntity
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+852.0
+ 20
+140.0
+ 30
+0.0
+ 40
+5.0
+100
+AcDbArc
+ 50
+90.0
+ 51
+270.0
+  0
+ARC
+  5
+1B8
+100
+AcDbEntity
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+868.0
+ 20
+140.0
+ 30
+0.0
+ 40
+5.0
+100
+AcDbArc
+ 50
+270.0
+ 51
+90.0
+  0
+CIRCLE
+  5
+1B9
+100
+AcDbEntity
+100
+AcDbCircle
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+868.0
+ 20
+150.0
+ 30
+0.0
+ 40
+1.5
+  0
+CIRCLE
+  5
+1BA
+100
+AcDbEntity
+100
+AcDbCircle
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+852.0
+ 20
+150.0
+ 30
+0.0
+ 40
+1.5
+  0
+LINE
+  5
+1BB
+100
+AcDbEntity
+100
+AcDbLine
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+852.0
+ 20
+155.0
+ 30
+0.0
+ 11
+868.0
+ 21
+155.0
+ 31
+0.0
+  0
+ARC
+  5
+1BC
+100
+AcDbEntity
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+852.0
+ 20
+150.0
+ 30
+0.0
+ 40
+5.0
+100
+AcDbArc
+ 50
+90.0
+ 51
+270.0
+  0
+ARC
+  5
+1BD
+100
+AcDbEntity
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+868.0
+ 20
+150.0
+ 30
+0.0
+ 40
+5.0
+100
+AcDbArc
+ 50
+270.0
+ 51
+90.0
+  0
+CIRCLE
+  5
+1BE
+100
+AcDbEntity
+100
+AcDbCircle
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+868.0
+ 20
+160.0
+ 30
+0.0
+ 40
+1.5
+  0
+CIRCLE
+  5
+1BF
+100
+AcDbEntity
+100
+AcDbCircle
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+852.0
+ 20
+160.0
+ 30
+0.0
+ 40
+1.5
+  0
+LINE
+  5
+1C0
+100
+AcDbEntity
+100
+AcDbLine
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+852.0
+ 20
+165.0
+ 30
+0.0
+ 11
+868.0
+ 21
+165.0
+ 31
+0.0
+  0
+ARC
+  5
+1C1
+100
+AcDbEntity
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+852.0
+ 20
+160.0
+ 30
+0.0
+ 40
+5.0
+100
+AcDbArc
+ 50
+90.0
+ 51
+270.0
+  0
+ARC
+  5
+1C2
+100
+AcDbEntity
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+868.0
+ 20
+160.0
+ 30
+0.0
+ 40
+5.0
+100
+AcDbArc
+ 50
+270.0
+ 51
+90.0
+  0
+CIRCLE
+  5
+1C3
+100
+AcDbEntity
+100
+AcDbCircle
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+868.0
+ 20
+170.0
+ 30
+0.0
+ 40
+1.5
+  0
+CIRCLE
+  5
+1C4
+100
+AcDbEntity
+100
+AcDbCircle
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+852.0
+ 20
+170.0
+ 30
+0.0
+ 40
+1.5
+  0
+LINE
+  5
+1C5
+100
+AcDbEntity
+100
+AcDbLine
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+852.0
+ 20
+175.0
+ 30
+0.0
+ 11
+868.0
+ 21
+175.0
+ 31
+0.0
+  0
+ARC
+  5
+1C6
+100
+AcDbEntity
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+852.0
+ 20
+170.0
+ 30
+0.0
+ 40
+5.0
+100
+AcDbArc
+ 50
+90.0
+ 51
+270.0
+  0
+ARC
+  5
+1C7
+100
+AcDbEntity
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+868.0
+ 20
+170.0
+ 30
+0.0
+ 40
+5.0
+100
+AcDbArc
+ 50
+270.0
+ 51
+90.0
+  0
+LINE
+  5
+1C8
+100
+AcDbEntity
+100
+AcDbLine
+  8
+0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+852.0
+ 20
+95.0
+ 30
+0.0
+ 11
+868.0
+ 21
+95.0
+ 31
+0.0
   0
 ENDSEC
   0
@@ -11309,7 +12363,7 @@ E
   3
 AcDbVariableDictionary
 350
-1A2
+1C9
   0
 DICTIONARY
   5
@@ -11773,7 +12827,7 @@ Layout2
   0
 DICTIONARY
   5
-1A2
+1C9
 100
 AcDbDictionary
 281
@@ -11781,15 +12835,15 @@ AcDbDictionary
   3
 DIMASSOC
 350
-1A4
+1CB
   3
 HIDETEXT
 350
-1A3
+1CA
   0
 DICTIONARYVAR
   5
-1A3
+1CA
 100
 DictionaryVariables
 280
@@ -11799,7 +12853,7 @@ DictionaryVariables
   0
 DICTIONARYVAR
   5
-1A4
+1CB
 100
 DictionaryVariables
 280
