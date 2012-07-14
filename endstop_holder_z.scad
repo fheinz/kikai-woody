@@ -1,3 +1,4 @@
 include <Kikai Woody.scad>;
 
-!lm8uu_retainer();
+endstop_holder(z=true);
+
