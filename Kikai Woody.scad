@@ -27,7 +27,7 @@ belt_thickness=1.5;
 belt_tooth_depth=0.5;
 idler_pulley_size = 22; // 22 for 636/608 bearing
 idler_pulley_width = 8; // 8 for 636/608
-idler_pulley_axis_diameter = m6_size; // m6 for 636 bearing
+idler_pulley_axis_diameter = m4_size;
 idler_pulley_nut_size = m6_nut_size; // m6 for 636 bearing
 motor_pulley_size = 12;
 pulley_radius_difference = (idler_pulley_size-motor_pulley_size)/2+belt_tooth_depth;
@@ -199,17 +199,18 @@ module 608_adapter(center_hole_d=idler_pulley_axis_diameter+0.25, border_d=idler
         union() {
             cylinder(r=border_d/2, h=border_bottom_h);
             cylinder(r=shim_d/2, h=border_bottom_h+shim_h);
-            cylinder(r=(bearing_hole_d+0.8)/2, h=total_height, $fn=60);
+            cylinder(r=bearing_hole_d/2, h=border_bottom_h+shim_h+bearing_width/2, $fn=60);
         }
-        #translate([0, 0, -1]) polyhole(d=center_hole_d+0.2, h=total_height+2);
+        #translate([0, 0, -1]) polyhole(d=center_hole_d, h=total_height+2);
     }
     translate([0, 25, 0]) difference() {
         difference() {
             union() {
                 cylinder(r=border_d/2, h=border_top_h);
                 cylinder(r=shim_d/2, h=border_top_h+shim_h);
+                cylinder(r=bearing_hole_d/2, h=border_top_h+shim_h+bearing_width/2, $fn=60);
             }
-            #translate([0, 0, -1]) polyhole(d=bearing_hole_d+0.25, h=total_height+2);
+            #translate([0, 0, -1]) polyhole(d=center_hole_d, h=total_height+2);
         }
     }
 }
