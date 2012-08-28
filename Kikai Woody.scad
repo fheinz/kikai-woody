@@ -181,13 +181,11 @@ module lm8uu_retainer_y(body_width=21, gap_width=10, body_height=18, body_length
             // top gap
             translate([0, 0, body_height/2]) cube([gap_width-1,body_length+0.1,body_height],center=true);
         }
-        // screw holes
-        for (i = [-1, 1]) {
-            translate([0, i*body_length/4, -(plate_height-2)/2])
-                polyhole(d=m3_size+0.5, h=plate_height+10, center=true);
-            translate([0, i*body_length/4, nut_wall_size-(plate_height-2)])
-                hexagon(size=m3_nut_size+0.5, h=plate_height+1);
-        }
+        // screw hole
+        translate([0, 0, -(plate_height-2)/2])
+            polyhole(d=m3_size+0.5, h=plate_height+10, center=true);
+        translate([0, 0, nut_wall_size-(plate_height-2)])
+            hexagon(size=m3_nut_size+0.5, h=plate_height+1);
     }
 }
 
@@ -217,24 +215,31 @@ module 608_adapter(center_hole_d=idler_pulley_axis_diameter+0.25, border_d=idler
 
 module timing_belt_trench(height=10) {
     union() {
-        translate([1.75, 0, 0]) belt_length(profile = "T2.5", belt_width = height, n = 15);
-        rotate([0, 0, -90]) mirror([0, 1, 0]) translate([1.75, 0, 0]) belt_length(profile = "T2.5", belt_width = height, n = 15);
+        translate([1.75, 0, 0]) belt_length(profile = "T2.5", belt_width = height, n = 15, backing_thickness_plus=0.35);
+        translate([0, 0, -0.5]) rotate([45, 0, 0]) cube([15*2.5, 2, 2]);
+        rotate([0, 0, -90]) mirror([0, 1, 0]) {
+            translate([1.75, 0, 0])  belt_length(profile = "T2.5", belt_width = height, n = 15, backing_thickness_plus=0.35);
+            translate([0, 0, -0.5]) rotate([45, 0, 0]) cube([15*2.5, 2, 2]);
+        }            
         translate([4, -4, 0]) difference() {
             translate([-4, 0, 0]) cube([4, 4, height]);
             cylinder(r=4, h=height, $fn=60);
         }
     }
 }
-module timing_belt_trap_y(width=10, length=40, height=7, base_thickness=7, nut_wall_size=3) {
+module timing_belt_trap_y(width=10, length=40, height=7, base_thickness=10, nut_wall_size=3, board_thickness=5.5) {
     difference() {
-        // body
-        translate([-length/2, -width/2, 0]) cube([length, width, height+base_thickness]);
+        union() {
+            // body
+            translate([-length/2, -width/2, 0]) cube([length, width, height+base_thickness]);
+            translate([0, 0, height+base_thickness]) rotate([0, 0, 90]) linear_extrude(file="Y anchor interlock.dxf", layer="0", height=board_thickness);
+        }
         // bolt hole+nut trap
-        translate([0, 0, height/2]) polyhole(size=m3_size+0.25, h=height+2, center=true);
-        translate([0, 0, nut_wall_size]) hexagon(size=m3_nut_size+0.25, h=height+base_thickness);
+        translate([0, 0, height+base_thickness+0.3-nut_wall_size]) polyhole(d=m3_size+0.5, h=nut_wall_size);
+        translate([0, 0, -1]) hexagon(size=m3_nut_size+0.5, h=height+base_thickness+1-nut_wall_size);
         // force-bearing trench
-        #translate([5, 0, base_thickness]) timing_belt_trench(height=height+1);
-        #mirror([1, 0, 0]) translate([5, 0, base_thickness]) timing_belt_trench(height=height+1);
+        #translate([5, 0, -1]) timing_belt_trench(height=height+1);
+        #mirror([1, 0, 0]) translate([5, 0, -1]) timing_belt_trench(height=height+1);
     }
 }
 
@@ -248,7 +253,7 @@ module timing_belt_trap_x(corner_radius=4, width=10, length=20, height=7, base_t
         // Hole for M4 bolt
         translate([0, 0, -1]) polyhole(d=m4_size+0.5, h=height+base_thickness+2);
         // force-bearing trenches
-        #translate([width/2, 0, base_thickness]) timing_belt_trench(height= height+1);
+        #translate([width/2, 0, -1]) timing_belt_trench(height=height+1);
     }
 }
 
@@ -296,5 +301,31 @@ module endstop_holder(z=false, height=10, thickness=3, rod_size=8, bolt_offset=5
         } else {
             cradle();
         }
+    }
+}
+
+module z_bolt_holder(anchor_width=26, anchor_height=11, anchor_hole_separation=18, anchor_hole_vert_offset=5, bridge_thickness=4, board_thickness=5.5, board_separation=12,
+                        cylinder_d=8, cylinder_h=10) {
+    module half_body() {
+        union() {
+            translate([-anchor_width/2, 0, 0]) cube([anchor_width/2, board_thickness, anchor_height]);
+            translate([-(anchor_width/2-bridge_thickness), 0, anchor_height]) {
+                rotate([-90, 0, 0]) cylinder(r=bridge_thickness, h=board_thickness);
+                cube([anchor_width/2-bridge_thickness, board_thickness, bridge_thickness]);
+            }
+            translate([-(board_separation-1)/2, 0, anchor_height]) cube([(board_separation-1)/2, board_thickness*2+cylinder_d, bridge_thickness]);
+            translate([-(board_separation-1)/2, board_thickness*2+0.5, anchor_height-bridge_thickness]) cube([(board_separation-1)/2, cylinder_d-0.5, bridge_thickness*2]);
+        }
+    }
+    difference() {
+        union() {
+            half_body();
+            mirror([1, 0, 0]) half_body();
+            translate([0, board_thickness*2+cylinder_d/2, anchor_height+bridge_thickness]) cylinder(r=cylinder_d/2, h=cylinder_h);
+        }
+        for (i=[-1,1]) {
+            #translate([i*anchor_hole_separation/2, -1, anchor_hole_vert_offset]) rotate([-90, 0, 0]) polyhole(d=m3_size+0.5, h=board_thickness+2);
+        }
+        #translate([0, board_thickness*2+cylinder_d/2, anchor_height-(bridge_thickness+1)]) polyhole(d=m3_size-0.2, h=cylinder_h+2*bridge_thickness+2);
     }
 }
