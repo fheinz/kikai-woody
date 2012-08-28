@@ -30,7 +30,7 @@ m3_nut_flats = 5.7;	// normal M3 hex nut exact width = 5.5
 m3_nut_depth = 2.7;	// normal M3 hex nut exact depth = 2.4, nyloc = 4
 
 retainer = 1;		// Belt retainer above teeth, 0 = No, 1 = Yes
-retainer_ht = 1.5;	// height of retainer flange over pulley, standard = 1.5
+retainer_ht = 2;	// height of retainer flange over pulley, standard = 1.5
 idler = 0;			// Belt retainer below teeth, 0 = No, 1 = Yes
 idler_ht = 1.5;		// height of idler flange over pulley, standard = 1.5
 
@@ -165,9 +165,14 @@ module pulley( belt_type , pulley_OD , tooth_depth , tooth_width )
 			}
 			
 		//belt retainer / idler
-		if ( retainer > 0 ) {translate ([0,0, pulley_b_ht + pulley_t_ht ]) 
-		rotate_extrude($fn=teeth*4)  
-		polygon([[0,0],[pulley_OD/2,0],[pulley_OD/2 + retainer_ht , retainer_ht],[0 , retainer_ht],[0,0]]);}
+		if ( retainer > 0 ) {
+                        translate ([0,0, pulley_b_ht + pulley_t_ht ]) cylinder(r=pulley_OD/2+retainer_ht, h=retainer_ht);
+//		        rotate_extrude($fn=teeth*4) polygon([[0,0],[pulley_OD/2 + retainer_ht , 0], [pulley_OD/2 + retainer_ht , retainer_ht],[0 , retainer_ht],[0,0]]);
+                        translate([0, 0, pulley_b_ht+0.2]) difference() {
+                                cylinder(r=pulley_OD/2+retainer_ht, h=pulley_t_ht-0.4);
+                                translate([0, 0, -1]) cylinder(r=pulley_OD/2+retainer_ht-0.3, h=pulley_t_ht+2);
+                        }
+                }
 		
 		if ( idler > 0 ) {translate ([0,0, pulley_b_ht - idler_ht ]) 
 		rotate_extrude($fn=teeth*4)  
