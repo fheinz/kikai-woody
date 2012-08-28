@@ -17,7 +17,7 @@ translate([0,0,-40])color("green")belt_length(profile = "T10", belt_width = 10, 
 */
 
 //Outer Module
-module belt_length(profile = "T2.5", belt_width = 6, n = 10)
+module belt_length(profile = "T2.5", belt_width = 6, n = 10, backing_thickness_plus=0)
 {
 
 			if ( profile == "T2.5" ) 
@@ -27,7 +27,7 @@ module belt_length(profile = "T2.5", belt_width = 6, n = 10)
 						n = n, 
 						belt_width = belt_width,
 						tooth_pitch = 2.5,
-						backing_thickness = 0.6	
+						backing_thickness = 0.6+backing_thickness_plus
 						);
 				}
 			if ( profile == "T5" ) 
@@ -37,7 +37,7 @@ module belt_length(profile = "T2.5", belt_width = 6, n = 10)
 						n = n, 
 						belt_width = belt_width,
 						tooth_pitch = 5,
-						backing_thickness = 1	
+						backing_thickness = 1+backing_thickness_plus
 						);
 				}
 			if ( profile == "T10" ) 
@@ -47,7 +47,7 @@ module belt_length(profile = "T2.5", belt_width = 6, n = 10)
 						n = n, 
 						belt_width = belt_width,
 						tooth_pitch = 10,
-						backing_thickness = 2
+						backing_thickness = 2+backing_thickness_plus
 						);
 				}
 			if ( profile == "MXL" ) 
@@ -57,7 +57,7 @@ module belt_length(profile = "T2.5", belt_width = 6, n = 10)
 						n = n, 
 						belt_width = belt_width,
 						tooth_pitch = 2.032,
-						backing_thickness = 0.64
+						backing_thickness = 0.64+backing_thickness_plus
 						);
 				}
 
