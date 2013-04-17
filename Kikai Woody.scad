@@ -51,98 +51,6 @@ module leadscrew_coupler() difference() {
 	//translate([0, 0, -1]) cube(100);
 }
 
-module x_end(motor = 0, clamping_hole_offsets = [motor_casing/2-pulley_radius_difference, (x_rod_spacing + rod_size + 8)-(motor_casing/2-pulley_radius_difference)]) {
-    mirror([(motor == 0) ? 1 : 0, 0, 0]) difference() {
-        union() {
-            // Motor holder
-            if (motor > 0) translate([-(motor_casing / 2 + rod_size + (bearing_size+0.5) + 8) / 2 - (motor_casing+motor_wiggle), (bearing_size+0.5) + rod_size-2/* 8 + rod_size */, 0]) rotate([90, 0, 0]) {
-                    linear_extrude(height = 7) difference() {
-                        #square([motor_casing + motor_wiggle + 3, motor_casing]);
-                        translate([motor_casing / 2, motor_casing / 2, 0]) {
-                            circle(motor_shaft_bevel_diameter / 2);
-                            translate ([motor_wiggle, 0, 0]) circle(motor_shaft_bevel_diameter / 2);
-                            translate ([motor_wiggle/2, 0, 0]) square([motor_wiggle,motor_shaft_bevel_diameter], center=true);
-                            for(x = [1, -1]) for(y = [1, -1]) {
-                                    translate([x * motor_screw_spacing / 2, y * motor_screw_spacing / 2, 0]) {
-                                        circle(m3_size * da6, $fn = 6);
-                                        translate ([motor_wiggle, 0, 0]) circle(m3_size * da6, $fn = 6);
-                                        translate ([motor_wiggle/2, 0, 0]) square([motor_wiggle, m3_size], center=true);
-                                    }
-                                }
-                            translate([-(motor_casing * 1.5 - motor_screw_spacing), (motor > 1) ? (motor_casing / 2 - motor_screw_spacing) : 0, 0]) square([motor_casing, x_rod_spacing + 8 + rod_size]);
-                        }
-                    }
-                }
-            // main body
-            linear_extrude(height = x_rod_spacing + 8 + rod_size, convexity = 5) difference() {
-                union() {
-                    for(side = [1, -1]) translate([side * z_rod_spacing/2, 0, 0]) circle((bearing_size+0.5) / 2 + 3, $fn = 30);
-                    #square([z_rod_spacing, (bearing_size) / 2 + 7], center = true);
-                    translate([-(z_rod_spacing + (bearing_size+0.5) + 6) / 2, 0, 0]) square([(z_rod_spacing + (bearing_size+0.5) / 2 + 3 + 3) / 2, (bearing_size+0.5) / 2 + 4 + rod_size / 2]);
-                    translate([-(z_rod_spacing + (bearing_size+0.5) + 6) / 2, 0, 0]) square([z_rod_spacing + (bearing_size+0.5) / 2 + 3 + 3, (bearing_size+0.5) / 2 + 3 + rod_size / 2]);
-                    translate([-(z_rod_spacing + (bearing_size+0.5) + 6) / 2 + rod_size / 2 + 2, 0, 0]) square([(z_rod_spacing + (bearing_size+0.5) + 6) / 2 + 5 - rod_size / 2 - 2, (bearing_size+0.5) / 2 + 6 + rod_size]);
-                    translate([-(z_rod_spacing + (bearing_size+0.5) + 6) / 2 + rod_size / 2 + 2, (bearing_size+0.5) / 2 + rod_size / 2 + 4, 0]) {
-                        if (motor > 0) {
-                            square(rod_size + 4, center=true);
-                        } else {
-                            circle(rod_size / 2 + 2);
-                        }
-                    }
-                    translate([0, (bearing_size+0.5) / 2 + rod_size + 6, 0]) square([15,10], center = true);
-                }
-                square([z_rod_spacing, 3], center = true);
-                translate([z_rod_spacing/2, 0, 0]) circle((bearing_size+0.5) / 2 - .5, $fn = 30);
-                translate([-z_rod_spacing/2, 0, 0]) circle(rod_nut_size * 6/14, $fn = 6);
-                translate([4 + rod_size / 2, (bearing_size+0.5) / 2 + rod_size / 2 + 3, 0]) {
-                    square([z_rod_spacing + (bearing_size+0.5) + 8, rod_size / 2], center = true);
-                    translate([-(z_rod_spacing + (bearing_size+0.5) + 8) / 2, .5, 0]) circle(rod_size / 4 + .5, $fn = 12);
-                }
-            }
-            if (motor < 1) translate([z_rod_spacing/2, 0, 0]) rotate([0, 0, -90]) translate([(bearing_size+0.5)/2+6, 0, 0]) difference() {
-                    cylinder(r=4, h=7);
-                    #translate([0, 0, -0.1]) polyhole(d=3, h=7.2);
-                }
-        }
-        translate([0, 0, (x_rod_spacing + rod_size + 8) / 2]) {
-            // lm8uu cradles
-            for(end = [0, 1]) mirror([0, 0, end]) translate([z_rod_spacing / 2 , 0, -(x_rod_spacing + rod_size + 8) / 2 - 1]) polyhole(d = bearing_size+0.25, h = bearing_length+0.5);
-            // Z axis cradles
-            for(side = [1, -1]) render(convexity = 5) translate([0, (bearing_size+0.5) / 2 + rod_size / 2 + 3, side * x_rod_spacing / 2]) rotate([0, 90, 0]) {
-                    difference() {
-                        translate([0, 0, (motor > -1) ? rod_size / 2 + 2 : 0]) intersection() {
-                            rotate(45) cube([rod_size + 2, rod_size + 2, z_rod_spacing + (bearing_size+0.5) + 10], center = true);
-                            cube([rod_size * 2, rod_size + 2, z_rod_spacing + (bearing_size+0.5) + 10], center = true);
-                        }
-                        translate([0, rod_size, 0]) cube([rod_size * 2, rod_size * 2, 6], center = true);
-                        for(end = [1, -1]) translate([0, -rod_size, end * z_rod_spacing / 2]) cube([rod_size * 2, rod_size * 2, 6], center = true);
-                    }
-                    translate([0, 0, rod_size / 2 + 2]) intersection() {
-                        rotate(45) cube([rod_size, rod_size, z_rod_spacing + (bearing_size+0.5) + 10], center = true);
-                        cube([rod_size * 2, rod_size + 1, z_rod_spacing + (bearing_size+0.5) + 10], center = true);
-                    }
-                }
-        }    
-        // Z nut hole
-        #translate([-z_rod_spacing / 2, 0, 5]) rotate(90) hexagon(size = m8_nut_size-0.3, h = x_rod_spacing + 8 + rod_size);
-        %translate([z_rod_spacing / 2, 0, 5]) rotate(180 / 8) cylinder(r = rod_size * da8, h = 200, center = true, $fn = 8);
-        // holes for clamping screws
-        for (i = [0, 1]) {
-            translate([0, 0, clamping_hole_offsets[i]]) {
-                #rotate([90, 0, 0]) {
-                    if (i == 1 || motor > 0) {
-                        polyhole(d = m3_size+0.5, h = 100, center = true);
-                        translate([0, 0, -((bearing_size+0.5) / 2 + rod_size + 11.5)]) polyhole(d=m3_head_size+0.5, h=m3_head_height+0.5);
-                        translate([0, 0, (bearing_size+0.5) / 4 + 1.5]) hexagon(size=m3_nut_size+0.5, h = 2.5);
-                    } else {
-                        polyhole(d = idler_pulley_axis_diameter+0.5, h = 100, center = true);
-                        translate([0, 0, (bearing_size+0.5) / 4 + 1.5]) hexagon(size = idler_pulley_nut_size, h = 5);
-                    }
-                }
-            }
-        }
-    }
-}
-
 module lm8uu_retainer_x(thickness=6) {
     outer_size=bearing_size+2*thickness;
     length=3*bearing_length/4;
@@ -166,10 +74,12 @@ module lm8uu_retainer_x(thickness=6) {
 }
 
 module lm8uu_retainer_y(body_width=21, gap_width=10, body_height=18, body_length=25, plate_height=7, nut_wall_size=3) {
+    ridge_distance=(17.5+17.5-2*1.1)/2;
+    ridge_offset=ridge_distance/2;
     rotate([90,0,90]) difference() {
         union() {
             // base
-            translate([-body_width/2,-body_length/2,-(plate_height-2)])
+            #translate([-body_width/2,-body_length/2,-(plate_height-2)])
                 cube([body_width,body_length,plate_height+1]);
             // body
             translate([-body_width/2,-body_length/2,0])
@@ -177,9 +87,15 @@ module lm8uu_retainer_y(body_width=21, gap_width=10, body_height=18, body_length
         }
         translate([0,0,bearing_size/2+2]) {
         // lm8uu hole
-            rotate([90,0,0]) polyhole(d=bearing_size+0.25, h=body_length+0.1, center=true);
+            difference() {
+                rotate([90,0,0]) polyhole(d=bearing_size+0.25, h=body_length+0.1, center=true);
+                rotate([90,0,0]) for (i = [-ridge_offset, ridge_offset]) {
+                    translate([0, 0, i]) rotate_extrude() translate([(bearing_size+0.25)/2, 0, 0]) circle(r=0.5, $fn=7);
+                }
+            }
             // top gap
             translate([0, 0, body_height/2]) cube([gap_width-1,body_length+0.1,body_height],center=true);
+            
         }
         // screw hole
         translate([0, 0, -(plate_height-2)/2])
@@ -324,8 +240,9 @@ module z_bolt_holder(anchor_width=26, anchor_height=11, anchor_hole_separation=1
             translate([0, board_thickness*2+cylinder_d/2, anchor_height+bridge_thickness]) cylinder(r=cylinder_d/2, h=cylinder_h);
         }
         for (i=[-1,1]) {
-            #translate([i*anchor_hole_separation/2, -1, anchor_hole_vert_offset]) rotate([-90, 0, 0]) polyhole(d=m3_size+0.5, h=board_thickness+2);
+            #translate([i*anchor_hole_separation/2, -1, anchor_hole_vert_offset]) rotate([-90, 0, 0]) polyhole(d=m3_size+0.20, h=board_thickness+2);
         }
-        #translate([0, board_thickness*2+cylinder_d/2, anchor_height-(bridge_thickness+1)]) polyhole(d=m3_size-0.2, h=cylinder_h+2*bridge_thickness+2);
+        #translate([0, board_thickness*2+cylinder_d/2, anchor_height-(bridge_thickness+1)]) polyhole(d=m3_size+1, h=cylinder_h+2*bridge_thickness-2);
+        #translate([0, board_thickness*2+cylinder_d/2, anchor_height-(bridge_thickness+1)+cylinder_h+2*bridge_thickness-1.7]) polyhole(d=m3_size, h=cylinder_h+2*bridge_thickness+2);
     }
 }
